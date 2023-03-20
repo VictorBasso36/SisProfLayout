@@ -1,0 +1,168 @@
+.MainBannerLocal{
+    background-color: var(--Main-Color);
+    border-radius: 60px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    height: 500px;
+    align-items: flex-start;
+    overflow:hidden;
+}
+
+.MainTextlocal{
+    width: 600px;
+    padding: 50px 30px;
+}
+
+.MainTextlocal h2{
+    font-weight: normal;
+    color: var(--Text-Color);
+    font-size: 18px;
+}
+
+.MainTextlocal h2 span{
+    line-height: 70%;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.MainTextlocal p{
+    color: var(--Text-Color);
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 100%;
+    margin-top: 60px;
+}
+
+
+.IframeMapsHere{
+    width: 60%;
+    height: 100%;
+}
+
+.IframeMapsHere iframe{
+    height: 100%;
+    width: 100%;
+}
+
+
+@media screen and (min-width:850px) and (max-width:1024px){
+    .MainBannerLocal{
+        background-color: var(--Main-Color);
+        border-radius: 50px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        overflow:hidden;
+    }
+
+    .MainTextlocal{
+        width: 100%;
+        padding: 60px 30px;
+    }
+
+    .MainTextlocal p{
+        color: var(--Text-Color);
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 100%;
+        margin-top: 30px;
+    }
+
+    
+    .IframeMapsHere{
+        width: 100%;
+        height: 300px;
+    }
+
+    .IframeMapsHere iframe{
+        height: 100%;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width:550px) and (max-width:850px){
+    .MainBannerLocal{
+        background-color: var(--Main-Color);
+        border-radius: 50px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        overflow:hidden;
+    }
+
+    .MainTextlocal{
+        width: 100%;
+        padding: 60px 30px;
+    }
+
+    .MainTextlocal p{
+        color: var(--Text-Color);
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 100%;
+        margin-top: 30px;
+    }
+
+    
+    .IframeMapsHere{
+        width: 100%;
+        height: 300px;
+    }
+
+    .IframeMapsHere iframe{
+        height: 100%;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width:280px) and (max-width:550px){
+    .MainBannerLocal{
+        background-color: var(--Main-Color);
+        border-radius: 50px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        overflow:hidden;
+    }
+
+    .MainTextlocal{
+        width: 100%;
+        padding: 60px 30px;
+    }
+
+    .MainTextlocal p{
+        color: var(--Text-Color);
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 100%;
+        margin-top: 30px;
+    }
+
+    
+    .IframeMapsHere{
+        width: 100%;
+        height: 300px;
+    }
+
+    .IframeMapsHere iframe{
+        height: 100%;
+        width: 100%;
+    }
+    
+}

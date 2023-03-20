@@ -4,22 +4,17 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
 //Components
-import NavBar from '../../components/Navbar'
-import CallToAction from '../../components/CallToAction'
-import Card from '../../components/Card'
-import MaisVisitados from '../../components/MaisVisitados'
-import Banner from '../../components/Banner'
-import ParaComprar from '../../components/ParaComprar'
-import ParaAlugar from '../../components/ParaAlugar'
-import Footer from '../../components/Footer'
+import NavBar from '../../../components/Navbar'
+import Banner from '../../../components/Banner'
+import Footer from '../../../components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Resultado() {
   return (
     <>
       <Head>
-        <title>Real House - AN ESTATE COMPANY</title>
+        <title>Resultado - AN ESTATE COMPANY</title>
         <meta name="title" content="Real House - AN ESTATE COMPANY"/>
         <meta name="description" content="Descrição Real House - AN ESTATE COMPANY"/>
         <meta name="keywords" content="Keywords Real House - AN ESTATE COMPANY"/>
@@ -33,22 +28,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-
         <div className={styles.MainBanner}>
-          <div className={styles.DetailShawn}>
-
-          </div>
-
-          <NavBar/>
-          <h1>Aguardando End Points Pequisa</h1>
+            <NavBar/>
         </div>
-
-        <CallToAction/>
-        <MaisVisitados/>
       </main>
-      <Banner/>
-      <ParaComprar/>
-      <ParaAlugar/>
+
       <Footer/>
     </>
   )

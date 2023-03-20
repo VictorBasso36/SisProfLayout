@@ -1,0 +1,164 @@
+.MainBanner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.MainBannerContainer{
+    width: 90%;
+    max-width: var(--max-width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Banner{
+    display: flex;
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+}
+
+.BannerImage{
+    width: 60%;
+}
+
+.BannerContentHere{
+    width: 600px;
+    background-color: var(--Main-Color);
+    padding: 60px 20px 20px 20px;
+}
+
+.BannerContentHere h2{
+    color: var(--Text-Color);
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.BannerContentHere p{
+    font-size: 20px;
+}
+
+.BannerContentHere h2 span{
+    font-weight: bolder;
+    font-size: 50px;
+    line-height: 100%;
+}
+
+
+@media screen and (min-width:850px) and (max-width:1024px){
+    .MainBanner{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .MainBannerContainer{
+        width: 90%;
+        max-width: var(--max-width);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .Banner{
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        min-height: 400px;
+        height: auto;
+    }
+    .BannerContentHere{
+        width:100%;
+        min-height: 450px;
+        height: auto;
+        background-color: var(--Main-Color);
+        padding: 60px 20px 20px 20px;
+    }
+    .BannerImage{
+        width: 100%;
+        min-height: 400px;
+    }
+    
+}
+
+@media screen and (min-width:550px) and (max-width:850px){
+    .MainBanner{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .MainBannerContainer{
+        width: 90%;
+        max-width: var(--max-width);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .Banner{
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        min-height: 400px;
+        height: auto;
+    }
+    .BannerContentHere{
+        width:100%;
+        min-height: 450px;
+        height: auto;
+        background-color: var(--Main-Color);
+        padding: 60px 20px 20px 20px;
+    }
+    .BannerImage{
+        width: 100%;
+        min-height: 400px;
+    }
+    
+}
+
+@media screen and (min-width:280px) and (max-width:550px){
+    .MainBanner{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .MainBannerContainer{
+        width: 90%;
+        max-width: var(--max-width);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .Banner{
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        min-height: 400px;
+        height: auto;
+    }
+    .BannerContentHere{
+        width:100%;
+        min-height: 500px;
+        height: auto;
+        background-color: var(--Main-Color);
+        padding: 60px 20px 20px 20px;
+    }
+    .BannerImage{
+        width: 100%;
+        min-height: 450px;
+    }
+    
+}

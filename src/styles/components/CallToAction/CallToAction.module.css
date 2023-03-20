@@ -1,0 +1,160 @@
+.MainCalToAction{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Main-Color);
+    padding: 60px 0px;
+    flex-direction: column;
+    color: var(--Text-Color);
+}
+
+.MainCalToActionContainer{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+
+}
+
+.CallToActionCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.CallToActionCard svg{
+    height: 50px;
+    width: unset;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+.CardText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.TextHere{
+    display: flex;
+    flex-direction: column;
+}
+.TextHere h2{
+    font-size: 18px;
+    line-height: 100%;
+}
+.callButton{
+    width: 250px;
+    background-color: #f7e7b4;
+    height: 35px;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    transition: background 500ms;
+    border-radius: var(--border-radius);
+}
+
+.callButton:hover{
+    background-color: var(--Second-Color);
+    color: white;
+}
+.callButton h2{
+    font-size: 20px;
+}
+
+
+@media screen and (min-width:850px) and (max-width:1024px){
+    .MainCalToAction{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--Main-Color);
+        padding: 30px 0px;
+        flex-direction: column;
+        color: var(--Text-Color);
+    }
+    
+    .MainCalToActionContainer{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-evenly;
+    
+    }
+
+    .CallToActionCard{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 25px;
+    }
+    
+}
+
+@media screen and (min-width:550px) and (max-width:850px){
+    .MainCalToAction{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--Main-Color);
+        padding: 30px 0px;
+        flex-direction: column;
+        color: var(--Text-Color);
+    }
+    
+    .MainCalToActionContainer{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-evenly;
+    
+    }
+
+    .CallToActionCard{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 25px;
+    }
+    
+}
+
+@media screen and (min-width:280px) and (max-width:550px){
+    .MainCalToAction{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--Main-Color);
+        padding: 30px 0px;
+        flex-direction: column;
+        color: var(--Text-Color);
+    }
+    
+    .MainCalToActionContainer{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-evenly;
+    
+    }
+
+    .CallToActionCard{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 50px 10px;
+    }
+    
+}

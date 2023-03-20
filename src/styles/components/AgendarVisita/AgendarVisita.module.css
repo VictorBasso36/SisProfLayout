@@ -1,0 +1,128 @@
+.MainVisita{
+    width: 100%;
+    max-width: 600px; 
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Main-Color);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.MainImage{
+    width: 100%;
+    min-height: 200px;
+}
+
+.AgendarForm{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px 20px 30px;   
+
+}
+
+.AgendarForm h3{
+    font-size: 30px;
+    line-height: 100%;
+    font-weight: bolder;
+    color: var(--Text-Color);
+}
+
+.AgendarForm form{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.AgendarForm form input{
+    outline: none;
+    color: var(--Second-Color);
+    font-weight:normal;
+    width: 100%;
+    height: 35px;
+    background-color: #f7e7b4;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    font-size: 16px;
+}
+
+.AgendarForm form input::placeholder{
+    color: var(--Second-Color);
+    font-size: 16px;
+}
+
+
+.AgendarForm form textarea{
+    outline: none;
+    resize: none;   
+     width: 100%;
+    color: var(--Second-Color);
+    height: 160px;
+    background-color: #f7e7b4;
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Aplicando estilos à barra de rolagem */
+.AgendarForm form textarea::-webkit-scrollbar {
+    display: none;
+    width: 8px; /* Largura da barra de rolagem */
+}
+  
+/* Estilizando o track da barra de rolagem */
+.AgendarForm form textarea::-webkit-scrollbar-track {
+    transition: all 500ms;
+    background-color: #eeeeee; /* Cor de fundo do track */
+}
+  
+/* Estilizando o thumb da barra de rolagem */
+.AgendarForm form textarea::-webkit-scrollbar-thumb {
+    transition: all 500ms;
+    background-color: var(--Main-Color); /* Cor do thumb */
+    border-radius: 0px 0px 0px 12px; /* Bordas arredondadas */
+}
+  
+  /* Mudando a cor da barra de rolagem quando o mouse está sobre ela */
+.AgendarForm form textarea::-webkit-scrollbar-thumb:hover {
+    transition: all 500ms;
+    background-color: var(--Second-Color);
+   
+  }
+
+.AgendarForm form textarea::placeholder{
+    color: var(--Second-Color);
+    font-size: 16px;
+}
+
+.AgendarForm form button {
+    background-color: transparent;
+    border: none;
+    height: 35px;
+    cursor: pointer;
+}
+
+.AgendarForm form button:hover p{
+    color: #f7e7b4;
+}
+
+.AgendarForm form button p{
+    color: var(--Text-Color);
+    text-decoration: underline;
+    font-size: 30px;  
+}
+
+
+@media screen and (min-width: 280px) and (max-width:550px){
+    .AgendarForm{
+        display: flex;
+        flex-direction: column;
+        padding: 40px 20px 20px 20px;   
+    
+    }
+}

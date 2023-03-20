@@ -1,0 +1,17 @@
+.main{
+    margin-top: 180px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainContainer{
+    width: 90%;
+    max-width: var(--max-width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
