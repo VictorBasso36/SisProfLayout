@@ -40,7 +40,7 @@ export default function Home() {
           </div>
 
           <NavBar/>
-          <h1>Aguardando End Points Pequisa</h1>
+          <h1>Aguardando End Points Pesquisa</h1>
         </div>
 
         <CallToAction/>
