@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import styles from '@/styles/Detalhes.module.css'
 
 //Components
@@ -12,8 +12,9 @@ import ExploreaRegiao from '../../../components/ExploreaRegiao'
 import ImoveisSemelhantes from '../../../components/ImoveisSemelhantes'
 import Footer from '../../../components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
-
+const poppins = Poppins({ subsets: ['latin'],
+weight:['100', '200', '300', '400', '500', '600', '700', '800', '900']
+})
 export default function Detalhes() {
   return (
     <>
