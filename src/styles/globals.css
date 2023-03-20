@@ -73,7 +73,12 @@ a {
 
 
 /* carrousel */
-
+.swiper, swiper-container{
+  z-index: unset!important;
+}
+.swiper-wrapper{
+  z-index: unset!important;
+}
 
 .swiper-horizontal{
   width: 100%;

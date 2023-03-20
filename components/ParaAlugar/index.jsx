@@ -65,7 +65,7 @@ export default function ParaAlugar() {
           >
             {cards.map(item => (
             <SwiperSlide >
-              <Link href="/Detalhes?Parameters=..." style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
+              <Link href="/Detalhes?Parameters=" style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
                 <Card/>
               </Link>
             </SwiperSlide>

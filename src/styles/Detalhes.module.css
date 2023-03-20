@@ -16,6 +16,9 @@
     max-width: var(--max-width);
     display: flex;
     align-items: center;
+    margin: 0 auto;
+    z-index: 1;
+    padding: 60px 0px;
     justify-content: center;
     flex-direction: column;
 }

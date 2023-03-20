@@ -55,7 +55,7 @@ export default function Detalhes() {
           </div>
         </main>
         <CallToAction/>
-        <div className={styles.mainContainer} style={{margin: '0 auto', padding: '60px 0px'}}>
+        <div className={styles.mainContainer}>
           <ExploreaRegiao src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.075426745228!2d-46.653426584398375!3d-23.5657343676404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1679170536518!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
         </div>
         <ImoveisSemelhantes/>
