@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Alexandria } from 'next/font/google'
 import styles from '@/styles/Anunciar.module.css'
 
 //Components
 import NavBar from '../../../components/Navbar'
 import Footer from '../../../components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const Alexandria = Inter({ subsets: ['latin'] })
 
 export default function Anunciar() {
   return (
