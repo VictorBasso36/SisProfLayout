@@ -12,49 +12,49 @@ import Link from 'next/link'
 
 const carSVG =    
   <svg
-    xmlns="http://www.w3.org/2000/svg"
-    xmlnsXlink="http://www.w3.org/1999/xlink"
-    width="32"
-    height="18"
-    viewBox="0 0 32 18"
-    >
-    <image
-      width="32"
-      height="18"
-      data-name="Camada 8 copiar 7"
-      xlinkHref="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAASCAYAAAA6yNxSAAACs0lEQVRIiZ3Ve6jfcxgH8NdhNNssLcLYijWZlVu2cBhF1DSzGtlE8Y+ypCQplBKRUm475BajNX/Ypi3M/Z4QSkoIzSG51GbH5cimx96/9d3v+zvndPau7/XzPM/ned7P5dM3uHYfY+Ak3IqzMWEU0V/wGG7GcGt1BOzV+/cu3IUPcBRW4HjMwcVx6OhcC/AkrsffOL1laQSM5sCjuA6LMQsf4hzMxRq8gpOxLA5W5H14Dm+iv2WxB0ai9DJcgflhYBDTMYTJue7A1aH+ADyCu+PwOrydAHe0rDfQi4GD8ARuyuZl4GccgkPzvX/kPsqzCmkJrsUALkgq3mlZ70IvBj7GZtyG1/F5cl/YNzT3xfntDb2K+sAwshqHx/GrsLK1S9B0YApW4bBQXCk4A19gLfbLBoU/8Dvm4YWGjR/zfCNOVlE+kLQUcz/gmaZOx4H+5KxwUTYoh54NxXOz9heewlbcFwZODTOFI7Aee+PgdNFsnJn1kr08qatO+bPmwPQU2SYsxL8tnnqjUjAxzo4Hp+CtsDGzjGzANpw7js1lOFVXLGqtjI73MAkz8FCl4IRU73hRud2Iz/ZAdzj6Kzpt+FWXQBXisS213VEUvpt6GAtl68gumZfq1nHgt8bCw/gen6bS549hfDTMSn2Vra/Tqh1UAP93QdHxOF7ENCzH0kT3NN7H7ZjaUK7WvD9nQk3BB3Fpl7PbMgMGU3jFwGt4Hl8m9aoL5mXyzUz/n5dZfkvOgqEUzVDD+Ks4H/dkRF9YBYVLGjKT86x5cGNmyXA2ryn5awU5IeP2mAjvSK8WG9/l36REMtCD6msa71fm6uAsvJz3SumWxjyY2BHqHsU35JD5Kafdt/gnKRovSr/yXFEXy6dliBVTu9DtwJ2J+N58f4PjMgH3BCcm559EuVgsNncC/wEcYZ1C6yNclQAAAABJRU5ErkJggg=="
-    ></image>
+  xmlns="http://www.w3.org/2000/svg"
+  xmlnsXlink="http://www.w3.org/1999/xlink"
+  width="41"
+  height="23"
+  viewBox="0 0 41 23"
+  >
+  <image
+    width="41"
+    height="23"
+    data-name="Camada 8 copiar 3"
+    xlinkHref="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAXCAYAAACWEGYrAAADd0lEQVRIicXXWazdUxQG8J/rlqKpoaoUfSg1TzFGBRelQvsgBDFFScQY04OpYmqRGEIIIlKEF4knhKqhMZRUKBGthz6g5iHmNNziyqrv8HdyG/fecxJfcrL3/p89fHvtb6299lrT+vYyDOyOs3EcNh3CsOV4FPfhq+Es1MRQSY7FQzgm7a/xGr7FKPRiAL80xkzCIehJey5mj4Rk7xD6TMFibIzHYsnvh7HGHtngVdgH04dLsuc//q9NvBuCh+JErMKt+BDLcFP6Ho43Yt2f8TYuxDshWlY8As91m2RNODq7X4grQ+DSSGBHXJ6+M2KpOvIvQ+yOyGB6jvtmTMNl3SJ5CfpwHRZgThZ6NQ60SXTZQkuPO2Gb0jtm4ifMx1RcgSUhu0unJCfgNnyCa7FzNFWkDowECus3xvyRcqPGt6eweeovp+xLOb9Tkq0J90tZ5FbggLZ+qwaZ64e2PiuxPdbGk7HsadgSdw2FZLt3l6ZuxHY4D59Fl6W/MXgzTtTC5EZ9dMplIdbEF6mXbi8IuZNwfr7VKfTjPTyTaNA6mX+RvCZHW3gE96T+cTx1TByliSL0RNpPY39sm001MSES+T2OJDG3tL5n9LsOdshFcXv+L2f9O5hfjevxCs7MTfF/oJzxqBhJosKCIlneuDQ6PLgDYjXhLHyOizvc4BZ4HxtiXE9Mq3HljRS74QSc0dDnSFEbPSxjbylLDkR3kzqcWHTV34V5WqikZHwrbCzt0qTdJFh4SSO2/db2Z8W0GxI6vsHdbaGnW6gb6CN8h3nYum3elU2SzZAxKpadnRDVn5j5QeP26AZeT0wel3xgVi6MXRtzrz6ZVpZzUNKxXzOobohTk7BKBvRCgvnyWLqJFxNjx8cid+L5ONK5iYNNrIt9cVH6Srs4LMo6vYm7qysVOh7A0Y1JFoZgHfnExM77cVaus3b8mPZ6ScceT3tKDDAYFofgOUmOj09+MDdtkcGS3uhuRmOS8vYNUp+ajEbDGlvh0zUsvCJWamFOfu0YaEisbpwjU2/lApMjr78WHuT5sCjk9sZb+TYxxOrZsNkaCA4HdUont26UjBsbyw205xSDZUGnRJuliwdxb8NyM7tAsFCJRcXAZ/MkqYSjsqfic2x758HeOGXmyh8fxun5Vt5euiwddQP1RqrMvYxQWizUc6TeT0X8H+BP5kXC/E7C0dsAAAAASUVORK5CYII="
+  ></image>
   </svg>
 
 const quartosSVG =
   <svg
   xmlns="http://www.w3.org/2000/svg"
   xmlnsXlink="http://www.w3.org/1999/xlink"
-  width="23"
-  height="19"
-  viewBox="0 0 23 19"
+  width="29"
+  height="24"
+  viewBox="0 0 29 24"
   >
-    <image
-      width="23"
-      height="19"
-      data-name="Camada 11 copiar 3"
-      xlinkHref="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAATCAYAAAB7u5a2AAABoUlEQVQ4ja3Vy6tPURQH8M/v1/HMxQAZKEpKmZl6RXQLE0P+ACR1jc1kwlQZMPWYmlOYSrhlpORRHnkMrishv+tqXWvX7vxu6vqdb+3W2Wvt891rfc9e+/Te3lq0E9ewGb91g5c41WAdNuE6XnTAvSH51gf5VDqPDi0bDZ+DfHlSHMKTfP6BL5it6BdjJb7iZ+XvpX9ZzrfibviCvJ/OZ3j/j1yD8NOQ928CU5UCJaF+v5qsSbsUt9PfHjfm8cW4j7F8f23ZpKkyKCflEg7gKr5X8R04hqdZdsESnMz18d1mSqBJzVQl78YbnGiVH2t/YT8+tmIHsSufS6zXVLJswcb8MCsw3iLYlvY4HrZiY7nx3rRzskQTRSZ3dI8jTaXRc5zDdCVDjahw0JKyYJA2Kj6bVc40eZ4D2/MMj4qbmci3ID+cZBejqzogX5V2PDSfHQp3hKLrFVzILhuMQB18q3EGE4X8A14NLf0/RILvVPfKZNrpeVp7ISMuvMDjUkZgAuezGS63bsOF4HQe6deF/BH2JMM+3BtBkvijPZj7qzH5B9hmchGa79AMAAAAAElFTkSuQmCC"
-    ></image>
+  <image
+    width="29"
+    height="24"
+    data-name="Camada 11 copiar 3"
+    xlinkHref="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAYCAYAAAAGXva8AAAB7UlEQVRIicXWTYhOcRQG8N87H74nyldSzELYWZB8lGjGQogVk8iCvY/FlCUrJdkpC0WJjRVbCguWSrJSYqGRhXzmY8zo6Fzdrju9b3lvns2/e5/b/znnOadzbmt461q4ibnYrjkcwRkM9aVEKA+iH4sakP2MHVgcOoXoZJ7fG8z0z/19lZev0dOAWCQ1D71l0VaeSxsQLHAVBzWUVVtU7S1jCU5hHSYq3Cucxz5srAQfrr3DBdytu3gq0Wm4nV1dh83Y38apoezYe52KrkzBiPQ4ZpW4aIoRnMRzHMZ4if+JYZzFATyoOjWV6GCeN/C0hp+DY3iMhzX8yxRdmG50JNpTOXun4NXwEyW+lVzZCcUYfIHluIa9mJHTaTztqguqPwV+1PCt7IuCD0cGsAq7yxMpPjyUzyH2Pms5vebSCORjOjWzho/7PmRgwW/I97UT6VzWoi76f8E2XMFsNRNptMtiBW5lF+9UsqewKCJZVloA3UKU4ls21UCIPsqVE/jUUKZlXA/RNVngJ5lxt7OU5YtsV2BBUdO32IU3DQiWEcNm5L9vmcn8VbmE1V2yOWz9gtPZwX+Jxn/M5ZxI3cZF3K+Kxu6MIT0fz7Cnza7tFJFIbKPYVHF/jNffF9/BlhQcw9FcWd3CCazHJnzF2C+UBV1rEnMGsQAAAABJRU5ErkJggg=="
+  ></image>
   </svg>
 
 const banheirosSVG =
   <svg
   xmlns="http://www.w3.org/2000/svg"
   xmlnsXlink="http://www.w3.org/1999/xlink"
-  width="19"
-  height="19"
-  viewBox="0 0 19 19"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
   >
   <image
-    width="19"
-    height="19"
+    width="24"
+    height="24"
     data-name="Camada 10 copiar 3"
-    xlinkHref="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAABgklEQVQ4jZ3UT4iOURTH8c87Myz8y4osLFjOkoVmYYediOyUsrOZNBtSdsxiZGqKsqMoK42y86eQslCKqaGUUBNmN8UMYl6dOk9unud95+FXt+d2n3O//TrnntOZm14lNYopfMdZbMMcLuCHFhrKkBFMJmwNJvAeW7ETh9FdCTeQ32HM4yQW8RSn0MHjNiCFs4B+y/0ufMIlHMPrdLtYu93DWakbOIhHmMGeTEFrZ6Uu4wPu4yJe4GUtqkFNzkJ3sJQuv+JdLaJBlbNOAV5fnD3DcwwW502KAn0ZyrJHTtb2qNpygju1P3/0C1cCdjXzcxOb8vK/aiPOBewBdmA7NvRwt5LeRrcE7Aje5HrVpyhN6mb8aewN2M98kNdxu+FCGwVsoXIReVr9n6BqUnQr2Cz218LaaV+24scKFhU9irHC4UCfVT2T3ZmeW1GAcp6dwXl8xuYWnmIYRFxMmIAul705nsPwGh7iXp88bsFx3MWB6m3+3ejrMI1DLZw9wYlsNfAbA0NSsYTmc4AAAAAASUVORK5CYII="
+    xlinkHref="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB2UlEQVRIia3WzatNYRQG8N89roGPfJWvkEKYETPEVbrJQFFK0ZWbkX+AKEM3zHykjIRSKJToThQTJnIHIgYGSJlgcMk3rdvatds5t7PPOU/tVu8+56znfda71vOeni19a5VwDgdyeQrXsRWvcFMbKBNcxD68xmeswd/4Tn5+BYP4WYemkXEutuEulmJXvn+J7RhFP2bV1dCbcTomYyTXxzLputz51FT3oS5Bo7L+k3EO3uEW+rA5VS7rlKCodxz2SmzEaTzGwlSxtw5Bb5P3wziJj7iH/VmyR5jfDYJfOFRaD+A2NmCoDkG1RM0Q3TUTb0tl7EhBFffrJC0jFCzApWzTozlc3XjeY2couIPFuIApmJHJO0G0+xLcCILleIbzdW1gHHxPNxgKgsPZ6yNtp2uO4SA4g9VpZANpG53u/mAO5mDRRZ8yXu7SzvtzIEeLOajV2y2gyNdTEHzpMkGU+XeUqyB4kXFHF5LPw4qc+m8FQZjbG5zNm6xdTMqmWVR4WXHI4Zq78RBP0hrCPWe3cD6NbJIf2IRpOIEHKl4UVrwKR7CnTQVPcbz8B6Hqps/zHg5cLV2l4z0TUn1gYthDHvAY/uem69P7Y+jiXmgF17I0YTdB+nXsR/gHBdVquAad7YUAAAAASUVORK5CYII="
   ></image>
   </svg>
 
@@ -62,16 +62,16 @@ const metragemSVG =
   <svg
   xmlns="http://www.w3.org/2000/svg"
   xmlnsXlink="http://www.w3.org/1999/xlink"
-  width="28"
-  height="19"
-  viewBox="0 0 28 19"
+  width="36"
+  height="24"
+  viewBox="0 0 36 24"
   >
-    <image
-      width="28"
-      height="19"
-      data-name="Camada 9 copiar 3"
-      xlinkHref="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAATCAYAAACDW21BAAACYUlEQVRIia3VbcjOZxgG8B/P7aVNXkJaDflkk5eIh0hqE1qaLbZM3kORDyskSfEF8VGifJB8EEKaxZqQlVJYa4S0svJO3pqUGevK8ay7+156noej/p3X/77/13WcL8d5Xm1uHmqnCp9jEUbhMS7jOe5hbdbvhLbZ3BHH83yLHugS4g/QCb9jxPsi3ItGzMjhH6Jfoirkp/A9Tue/VqOCcRiEj/E0djX+xA4cwRUMxHLsxxfvEuFGLAzZJ4nmIyzFYjzAbGzCVnyKXnUntYCw1OXXvM/FSszDnmSg4A56Z/0b+tad1ALChtRJIntZ9f8/sSULT7LuV/V9qwgL5scWskPYgAGp7zH0wd8hG4xJdSe1kHAyRqeOC1On3mmNE5gW0exOb87EgrrTmoGmGu3Dz7iRCL+q2Ts3girfXMJIbMYYrMe15hKWSfMas9IGB3E7InmRFPdM9NMzID6Lcg8n3WXfw/z2F7ribjJ0Hd3xOv37simlZfMvie5LDMFJDMW6NHzpx12ZPHuT2mX4KVHfQn9cwFQcwJw48SLZaazURLwodkk2XMW5iKcJr1L7+9iGKfgjEdzElmhge2p/FO3j7JRK1FdLfCD2SF0R3mxuqHo/XLU+GzstdnxG4qNSvvIUT89H6s3F2PRrq1AI12R21kb5f5gXgcyJxy1G21xJlcj8bfg6dSmt8CwCa46TRaH/oWnDN/gRZ9LcxYnSGp0xLMN7OCZELN9FneWO3Ikf0k7VY7GgjMbSSh1y7VVqb/wVmBjpFykXh0rqLmJV0lmNQlx6uFu+Lwquja7M3UL8GI3/ApdGjN0+aIiQAAAAAElFTkSuQmCC"
-    ></image>
+  <image
+    width="36"
+    height="24"
+    data-name="Camada 9 copiar 3"
+    xlinkHref="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAYCAYAAACSuF9OAAADZElEQVRIibXXeaimYxgG8N/ZhslynEgassyxRBnb2KecNIRRsu8ioiyDKKQshSEmlKUoaoo//GEcJJSyZN8GYw9ZM5YxWQ9jHN1cn95eM+mYb+56e57vfd73ea/nvq/7uu+vZ+bITlq2EY7Hnlgfv6EP/XgX1+CN9kvdsv7GPj24DmdiUuP+L3gZz2ITLMA9OAU/rSpAa+Nh7I6vcR/ey/rWuUZwEU7Hq3gNW+KPVQHo5oA5CXcnTG07L6CPxBQ8hwdxQLcBbYfjMD2hKZuMc7FX7l2LuXgeTyZsu+E77ItHuwWob+qmU27FI7gz9wawEPvjcxwYfj2BT7BNQlUgxjAL93YLUC/2aZ2wsuhHrJW1m7BGY73IPZz5U/Fw16wArYlfGxvOwPWtD4w35sW1ZZkXodftNqCyHTP2BNzRjWd6GplUnDocP+f35tggOtVVQIfFUwJoZgh8MNbDZrgFj+OZhk5dlvGKbgPaNmldoRnEWfgGd+CEpPZ+Ifq8ZOclIfgizMau3QDU0aE5uBjTQuYvkj1C6KYilzAekuvklJn+eO9QPLQygDoeWoyl4cRWOBU7ZL0DpnTqBpyPt3Lvw4SvsvJ1jOJtHJF9OjToj5zI2B9u9mYcyNXT8VDpzeW4He+kqJYSjyWM9dJqCeOGKTWzI4xDqWvDAVQSclcOuDSlaCh7dJ5flsQYyDODSZzJTQ/NzQO/Y5cAXBjuVAivwhb4IdeVATspXnkTj+FsfJVMPSZAL4hn6zDnRPnHEubvE/bi7Xiz2pd9G6JKeVgUT81L1lXl33gF4f8oZaQviv4CvszaaEJ/I+anxZmVb5RsPJDwXt0GJHzQIuecxnxJYz7eEMmO1e89GmI6I2Er2zvefR/H4qjWuz29+cDgCk79XzaQE7atqexPN+YvZixafNZ67i/rTdxH/ieg6SF418pHb1T2xCjyRO1SfBoB7RqgBWH76ATe6087Upm1fUrNGUntlQYkOlJu/wD/6vpbNi3N/nAyZXHIWm3KbVh9At9vt7//pP2S9M3VS7+EV+KxGmutysnOOCidQbWupTElamUlCdWW3J/7xctK749brU3TSkLqUJVQxcV1io/L+xtUJePCpGudtsJQ2VAblLaUBHSyZXl2Wnrzqa1/NSvyUO39d/vC0J+r+so0nBqcTwAAAABJRU5ErkJggg=="
+  ></image>
   </svg>
 
 
@@ -87,11 +87,15 @@ export default function MainDetalhesImovel(props){
             autoplay={{ delay: 6000 }}
             slidesPerView={4}
             styles={{height: '100%'}}
-    
             grabCursor={true}
             pointerEvents={'auto'}
             modules={[Pagination, Autoplay]}
-
+            breakpoints={{
+              280: {
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+              }
+            }}
           >
             {imgs.map(item => (
             <SwiperSlide className={styles.DetailsSlides} style={{
@@ -139,11 +143,26 @@ export default function MainDetalhesImovel(props){
                       </div>
                   </div>
                   <div className={styles.TitleAndRef}>
-                      <p>REF:12345</p>
+                      <p>REF: 12345</p>
                       <h1>Casa á venda - Moema, São Paulo - SP</h1>
                   </div>  
                   <div className={styles.ItensPlanta}>
-
+                      <div className={styles.ContainerItemPlanta}>
+                        {carSVG}
+                        <p>2</p>
+                      </div>
+                      <div className={styles.ContainerItemPlanta}>
+                        {quartosSVG}
+                        <p>2</p>
+                      </div>
+                      <div className={styles.ContainerItemPlanta}>
+                        {banheirosSVG}
+                        <p>2</p>
+                      </div>
+                      <div className={styles.ContainerItemPlanta}>
+                        {metragemSVG}
+                        <p>100m²</p>
+                      </div>
                   </div>
                 </div>
             </div>

@@ -23,6 +23,7 @@ export default function Home() {
         <meta name="keywords" content="Keywords Cliente"/>
         <meta name="robots" content="index, follow"/>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1"/>
         <meta name="language" content="Portuguese"/>
         <meta name="revisit-after" content="15 days"/>
         <meta name="author" content="sisprof"/>

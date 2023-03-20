@@ -24,6 +24,7 @@ export default function QuemSomos() {
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="language" content="Portuguese"/>
         <meta name="revisit-after" content="15 days"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1"/>
         <meta name="author" content="sisprof"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
