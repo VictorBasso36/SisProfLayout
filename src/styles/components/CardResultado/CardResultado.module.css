@@ -7,7 +7,8 @@
     justify-content: space-between;
     color: var(--Text-Color);
     display: flex;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     position: relative;
 }
 
@@ -192,7 +193,8 @@
         color: var(--Text-Color);
         display: flex;
         flex-direction: column;
-        margin-bottom: 50px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     .ImagemCapa{
@@ -241,7 +243,8 @@
         color: var(--Text-Color);
         display: flex;
         flex-direction: column;
-        margin-bottom: 50px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     .ImagemCapa{
@@ -300,7 +303,8 @@
         color: var(--Text-Color);
         display: flex;
         flex-direction: column;
-        margin-bottom: 50px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     .ImagemCapa{
@@ -359,7 +363,8 @@
         color: var(--Text-Color);
         display: flex;
         flex-direction: column;
-        margin-bottom: 50px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     .ImagemCapa{
@@ -432,7 +437,8 @@
         color: var(--Text-Color);
         display: flex;
         flex-direction: column;
-        margin-bottom: 50px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     .ImagemCapa{

@@ -51,6 +51,14 @@ export default function Resultado() {
               <h1>Item pesquisa aguardando layout e api</h1>
             </div>
             <div className={styles.ListResultado}>
+              {/* Pagination Loop pos API */}
+                <CardResultado/>
+                <CardResultado/>
+                <CardResultado/>
+                <CardResultado/>
+
+                <Banner  style={{ marginBottom: '10px' }} />
+
                 <CardResultado/>
                 <CardResultado/>
                 <CardResultado/>
