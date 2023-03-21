@@ -62,7 +62,7 @@ export default function CallToAction() {
                       <p>Encontre o imóvel dos sonhos!</p>
                     </div>
                   </div>
-                  <Link href="/">
+                  <Link href="/Resultado">
                     <div className={styles.callButton}>
                       <h2>Buscar agora</h2>
                     </div>
@@ -90,7 +90,7 @@ export default function CallToAction() {
                       <p>Fale com um corretor!</p>
                     </div>
                   </div>
-                  <Link href="/">
+                  <Link href="/Contato">
                     <div className={styles.callButton}>
                       <h2>Contato</h2>
                     </div>

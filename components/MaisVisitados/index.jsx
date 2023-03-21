@@ -30,7 +30,7 @@ export default function MaisVisitados() {
           <div className={styles.Title}>
             <h2>Os imóveis <br /><span>Mais Visitados:</span></h2>
           </div>
-          <Link href="google.com">
+          <Link href="/Resultado?Parameters=">
             <div>
               <p>Veja Mais</p>
             </div>

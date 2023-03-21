@@ -1,75 +1,80 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Poppins } from 'next/font/google'
-import styles from '@/styles/Resultado.module.css'
+import { Inter } from 'next/font/google'
 
-import { useState } from 'react'
+import styles from '@/styles/components/CardResultado/CardResultado.module.css'
 
-//Components
-import NavBar from '../../../components/Navbar'
-import Banner from '../../../components/Banner'
-import PaginationSearch from '../../../components/Pagination'
-import Footer from '../../../components/Footer'
-
-import CardResultado from '../../../components/CardResultado'
+//ItemsNext
+import Link from 'next/link'
 
 
-export default function Resultado() {
-  const [currentPage, setCurrentPage] = useState(1);
-  const items = ["item1", "item2", "item3", "item4", "item5", "item6", "item7", "item8", "item9", "item10", "item1", "item2", "item3", "item4", "item5", "item6", "item7", "item8", "item9", "item10"];
-  const itemsPerPage = 3;
 
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-  };
-
-  const itemsToDisplay = items.slice(
-    (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
-  );
-
+export default function CardResultado(props){
   return (
-    <>
-      <Head>
-        <title>Resultado - AN ESTATE COMPANY</title>
-        <meta name="title" content="Real House - AN ESTATE COMPANY"/>
-        <meta name="description" content="Descrição Real House - AN ESTATE COMPANY"/>
-        <meta name="keywords" content="Keywords Real House - AN ESTATE COMPANY"/>
-        <meta name="robots" content="index, follow"/>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="language" content="Portuguese"/>
-        <meta name="revisit-after" content="15 days"/>
-        <meta name="author" content="SisProf"/>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1"/>
-      </Head>
+    
+    <div className={styles.MainCard}>   
+        <div className={styles.MainContentCard}>
+            <div className={styles.ImagemCapa} style={{
+                backgroundImage: 'url("https://www.construtoralaguna.com.br/images/empreendimentos/ampio/fachada.webp")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'    
+                }}>
 
-      <main className={styles.main}>
-        <div className={styles.MainBanner}>
-            <NavBar/>
-            <div>
-              <h1>Item pesquisa aguardando layout e api</h1>
             </div>
-            <div className={styles.ListResultado}>
-                <CardResultado/>
-                <CardResultado/>
-                <CardResultado/>
-                <CardResultado/>
-                <PaginationSearch  items={items}
-                itemsPerPage={itemsPerPage}
-                onPageChange={handlePageChange}/>
+            <div className={styles.ContentItems}>
+                <div className={styles.PriceAndLocation}>
+                    <div className={styles.PriceResult}>
+                        <p>R$<span>1.000.000</span></p>
+                        <p>R$<span>400,00</span> Condóminio</p>
+                    </div>
+                    <div className={styles.Location}>
+                        <p><span>Moema, SP.</span></p>
+                        <p>Rua Lorem Ipsum, Moema - SP</p>
+                    </div>
+                </div>
+                <div className={styles.ItemsCardsResultadoHere}>
+                    <div className={styles.ItemsCardsResultadoHereContainer}>
+                        {carSVG}
+                        <p>2</p>
+                    </div>
+                    <div className={styles.ItemsCardsResultadoHereContainer}>
+                        {quartosSVG}
+                        <p>2</p>
+                    </div>
+                    <div className={styles.ItemsCardsResultadoHereContainer}>
+                        {banheirosSVG}
+                        <p>2</p>
+                    </div>
+                    <div className={styles.ItemsCardsResultadoHereContainer}>
+                        {metragemSVG}
+                        <p>100m²</p>
+                    </div>
+                </div>
+                <div className={styles.DescriptionHere}>
+                    <p className={styles.TitleDescription}><strong>Apartamento à venda - Moema, São Paulo</strong></p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                </div>
+            </div>
+           
+           
+           
+         
+        </div>
+        <div className={styles.ActionButtons}>
+            <div>
+                <p>AGENDAR VISITA</p>
+            </div>
+            <div>
+                <p>FAZER PROPOSTA</p>
+            </div>
+            <div>
+                <p>MAIS DETALHES</p>
             </div>
         </div>
-      </main>
-
-      <Footer/>
-    </>
+    </div>
+   
   )
 }
-
-
-
-
 const carSVG =    
   <svg
   xmlns="http://www.w3.org/2000/svg"

@@ -1,0 +1,515 @@
+.MainCard{
+    border-radius: 25px;
+    border: 1px solid var(--Main-Color);
+    width: 100%;
+    overflow: hidden;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: var(--Text-Color);
+    display: flex;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.ImagemCapa{
+    width: 450px;
+    height: auto;
+}
+
+.MainContentCard{
+    display: flex;
+}
+
+.ContentItems{
+    padding: 30px;
+    width: 100%;
+    width: 600px;
+}
+
+.PriceAndLocation{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.PriceResult p{
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.PriceResult p span{
+    font-weight: bolder;
+    line-height: 100%;
+    font-size: 25px;
+}
+
+.Location{
+    margin-left: 25px;
+    padding: 0px 0px 0px 20px   ;
+    border-left: 2px solid var(--Text-Color);
+}
+
+.Location p{
+    font-size: 16px;
+    line-height: 95%;
+}
+.Location p:nth-child(2){
+    line-height: 100%;
+}
+
+.Location p span{
+    line-height: 70%;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+
+.ItemsCardsResultadoHere{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.ItemsCardsResultadoHereContainer{
+    display: flex;
+    margin-left:20px;
+    align-items: center;
+    justify-content: center;
+}
+.ItemsCardsResultadoHereContainer:nth-child(1){
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ItemsCardsResultadoHereContainer p{
+    margin-left: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.DescriptionHere p{
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.DescriptionHere p strong{
+    font-weight: bolder;
+
+}
+
+.TitleDescription{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.ActionButtons{
+    height: auto;
+    display: flex;
+    min-height: 100%;
+    min-height: 275px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.ActionButtons div{
+    background-color: #ecece9;
+    width: 180px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ActionButtons div:hover{
+    background-color: var(--Second-Color);
+}
+
+.ActionButtons div {
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.ActionButtons div:hover p{
+    color: white;
+}
+
+
+.ActionButtons div:last-child{
+    background-color: var(--Main-Color);
+    
+}
+
+.ActionButtons div:last-child:hover{
+    background-color: #ecece9;
+}
+
+.ActionButtons div:last-child:hover p{
+    color: var(--Text-Color);
+}
+
+
+@media screen and (min-width:1300px) and (max-width:1440px){
+    .ImagemCapa{
+        width: 350px;
+        height: auto;
+    }
+    
+}
+
+
+@media screen and (min-width:1024px) and (max-width:1300px){
+    .ImagemCapa{
+        width: 350px;
+        height: auto;
+    }
+
+    .ContentItems{
+        padding: 30px;
+        width: 100%;
+        max-width: 550px;
+    }
+    
+}
+
+@media screen and (min-width:1024px) and (max-width:1250px){
+    .MainCard{
+        border-radius: 25px;
+        border: 1px solid var(--Main-Color);
+        width: 100%;
+        overflow: hidden;
+        align-items: flex-start;
+        justify-content: space-between;
+        color: var(--Text-Color);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .ImagemCapa{
+        width: 100%;
+        height:auto;
+        min-height: 400px;
+    }
+
+    
+    .MainContentCard{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .ContentItems{
+        padding: 30px;
+        width: 70%;
+        max-width: unset;
+    }
+
+    .ActionButtons{
+        height: auto;
+        display: flex;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-height: 100%;
+        min-height: 275px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+
+}
+
+@media screen and (min-width:850px) and (max-width:1024px){
+    .MainCard{
+        border-radius: 25px;
+        border: 1px solid var(--Main-Color);
+        width: 100%;
+        overflow: hidden;
+        align-items: flex-start;
+        justify-content: space-between;
+        color: var(--Text-Color);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .ImagemCapa{
+        width: 100%;
+        height:auto;
+        min-height: 400px;
+    }
+
+    
+    .MainContentCard{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .ContentItems{
+        padding: 30px;
+        width: 100%;
+        max-width: unset;
+    }
+
+    .ActionButtons{
+        height: auto;
+        display: flex;
+        position: static;
+        min-height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+
+    .ActionButtons div{
+        background-color: #ecece9;
+        width: 100%;
+        margin-top: 10px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:850px){
+    .MainCard{
+        border-radius: 25px;
+        border: 1px solid var(--Main-Color);
+        width: 100%;
+        overflow: hidden;
+        align-items: flex-start;
+        justify-content: space-between;
+        color: var(--Text-Color);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .ImagemCapa{
+        width: 100%;
+        height:auto;
+        min-height: 400px;
+    }
+
+    
+    .MainContentCard{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .ContentItems{
+        padding: 30px;
+        width: 100%;
+        max-width: unset;
+    }
+
+    .ActionButtons{
+        height: auto;
+        display: flex;
+        position: static;
+        min-height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+
+    .ActionButtons div{
+        background-color: #ecece9;
+        width: 100%;
+        margin-top: 10px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:850px){
+    .MainCard{
+        border-radius: 25px;
+        border: 1px solid var(--Main-Color);
+        width: 100%;
+        overflow: hidden;
+        align-items: flex-start;
+        justify-content: space-between;
+        color: var(--Text-Color);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .ImagemCapa{
+        width: 100%;
+        height:auto;
+        min-height: 400px;
+    }
+
+    
+    .MainContentCard{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .ContentItems{
+        padding: 30px;  
+        width: 100%;
+        max-width: unset;
+    }
+
+    .ActionButtons{
+        height: auto;
+        display: flex;
+        position: static;
+        min-height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+
+    .ActionButtons div{
+        background-color: #ecece9;
+        width: 100%;
+        margin-top: 10px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Location{
+        margin-left: 0px;
+        padding: 0px 0px 0px 0px;
+        border-left: unset;
+        margin-bottom: 20px;
+    }
+
+    .PriceAndLocation{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (min-width:280px) and (max-width:550px){
+    .MainCard{
+        border-radius: 25px;
+        border: 1px solid var(--Main-Color);
+        width: 100%;
+        overflow: hidden;
+        align-items: flex-start;
+        justify-content: space-between;
+        color: var(--Text-Color);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .ImagemCapa{
+        width: 100%;
+        height:auto;
+        min-height: 300px;
+    }
+
+    
+    .MainContentCard{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .ContentItems{
+        padding: 20px;
+        width: 100%;
+        max-width: unset;
+    }
+
+    .ActionButtons{
+        height: auto;
+        display: flex;
+        position: static;
+        min-height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+
+    .ActionButtons div{
+        background-color: #ecece9;
+        width: 100%;
+        margin-top: 10px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Location{
+        margin-left: 0px;
+        padding: 0px 0px 0px 0px;
+        border-left: unset;
+        margin-bottom: 20px;
+    }
+
+    .PriceAndLocation{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .ItemsCardsResultadoHere{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+
+    .ItemsCardsResultadoHereContainer{
+        display: flex;
+        margin-left:0px;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .ItemsCardsResultadoHereContainer:nth-child(1){
+        margin-left: 10px;
+    }
+}
