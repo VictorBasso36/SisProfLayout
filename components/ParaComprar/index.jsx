@@ -31,7 +31,7 @@ export default function ParaComprar() {
         </div>
         <div className={styles.CarrouselHere}>
           <Swiper
-            loop={true}
+            loop={false}
             spaceBetween={10}
             autoplay={{ delay: 6000 }}
             slidesPerView={4}

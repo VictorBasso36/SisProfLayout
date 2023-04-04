@@ -32,7 +32,7 @@ export default function ParaAlugar() {
       </div>
       <div className={styles.CarrouselHere}>
           <Swiper
-            loop={true}
+            loop={false}
             spaceBetween={10}
             autoplay={{ delay: 4000 }}
             slidesPerView={4}

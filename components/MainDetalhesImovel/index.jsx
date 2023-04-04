@@ -82,7 +82,7 @@ export default function MainDetalhesImovel(props){
     <>  
         <div className={styles.SwiperPhotosDetails}>
         <Swiper
-            loop={true}
+            loop={false}
             spaceBetween={0}
             autoplay={{ delay: 6000 }}
             slidesPerView={4}
