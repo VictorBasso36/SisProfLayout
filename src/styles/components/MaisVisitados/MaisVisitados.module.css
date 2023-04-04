@@ -9,6 +9,7 @@
 }
 
 .SectionCardsContainer{
+    height: 100%;
     width: 90%;
     max-width: var(--max-width);
 }
