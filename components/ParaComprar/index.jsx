@@ -24,7 +24,7 @@ export default function ParaComprar() {
           </div>
           <Link href="/Resultado-da-Pesquisa">
             <div>
-              <p>Veja Mais</p>
+              <p>Veja Mais Imóveis</p>
             </div>
           </Link>
         
