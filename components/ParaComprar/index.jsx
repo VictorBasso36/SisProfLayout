@@ -14,7 +14,7 @@ import Link from 'next/link'
 
 export default function ParaComprar() {
   //capturar da api
-  const cards = ['','','','','','','','','','','','','','','','','','','','','','','','','','','','',]
+  const cards = ['','','','','','','','','','','','']
   return (
     <section className={styles.SectionCards}>
       <div className={styles.SectionCardsContainer}>  
@@ -36,6 +36,7 @@ export default function ParaComprar() {
             autoplay={{ delay: 6000 }}
             slidesPerView={4}
             navigation
+            lazy="true"
             grabCursor={true}
             pointerEvents={'auto'}
             modules={[Pagination, Navigation, Autoplay]}

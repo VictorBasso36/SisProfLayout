@@ -15,7 +15,7 @@ import Link from 'next/link'
 
 export default function ParaAlugar() {
   //capturar da api
-  const cards = ['','','','','','','','','','','','','','','','','','','','','','','','','','','','',]
+  const cards = ['','','','','','','','','','','','']
   return (
     <section className={styles.SectionCards}>
     <div className={styles.SectionCardsContainer}>  
@@ -39,6 +39,7 @@ export default function ParaAlugar() {
             navigation
             grabCursor={true}
             pointerEvents={'auto'}
+            lazy="true"
             modules={[Pagination, Navigation, Autoplay]}
             breakpoints={{
               280: {

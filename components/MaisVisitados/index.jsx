@@ -13,7 +13,7 @@ import styles from '@/styles/components/MaisVisitados/MaisVisitados.module.css'
 import Card from '../Card'
 
 export default function MaisVisitados() {
-  const cards = ['','','','','','','','','','','','','','','','','','','','','','','','','','','','',]
+  const cards = ['','','','','','','','','','','','']
   return (
     <section className={styles.SectionCards}>
       <div className={styles.SectionCardsContainer}>  
