@@ -62,12 +62,12 @@ export default function ParaComprar() {
               },
             }}
           >
-            {cards.map(item => (
-            <SwiperSlide >
-              <Link href="/Detalhes" style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
-                <Card/>
-              </Link>
-            </SwiperSlide>
+            {cards.map((item, index) => (
+              <SwiperSlide key={index}>
+                <Link href="/Detalhes" style={{ width: '100%', maxWidth: '325px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Card loading="lazy" style={{ height: '450px' }} />
+                </Link>
+              </SwiperSlide>
             ))}
           </Swiper>
       

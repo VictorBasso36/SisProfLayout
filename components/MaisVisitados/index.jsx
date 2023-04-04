@@ -35,7 +35,7 @@ export default function MaisVisitados() {
             slidesPerView={4}
             navigation
             grabCursor={true}
-            lazy={true}
+            lazy="true"
             style={{ height: '450px' }}
             breakpoints={{
               280: {
@@ -63,7 +63,7 @@ export default function MaisVisitados() {
             {cards.map((item, index) => (
               <SwiperSlide key={index}>
                 <Link href="/Detalhes" style={{ width: '100%', maxWidth: '325px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <Card />
+                  <Card loading="lazy" style={{ height: '450px' }} />
                 </Link>
               </SwiperSlide>
             ))}
