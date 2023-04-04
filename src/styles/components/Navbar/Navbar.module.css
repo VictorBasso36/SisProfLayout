@@ -108,11 +108,16 @@
 
 .ClienteArea:hover{
     background-color: var(--Second-Color);
+    color: var(--Main-Color)!important;
 }
 
 .ClienteArea p{
-    color: white!important;
+    color: var(--Second-Color)!important;
     border-radius: 12px;
+}
+
+.ClienteArea:hover p{
+     color: var(--Main-Color)!important;
 }
 .HambMenu{
     display: none;
