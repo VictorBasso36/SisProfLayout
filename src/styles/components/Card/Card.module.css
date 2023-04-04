@@ -36,7 +36,7 @@
 
 .item{
     display: flex;
- 
+    
     align-items: center;
     justify-content: space-evenly;
 }
@@ -48,9 +48,12 @@
     margin-left: 5px;
 }
 
-.item svg{
-    height: 100%;
+.item img{
+    height: max-content;
+    width: max-content;
+    display: flex;
     height: unset;
+    object-fit: contain;
 }
 
 .PriceCard{
