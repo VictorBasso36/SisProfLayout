@@ -7,21 +7,6 @@ import styles from '@/styles/components/Card/Card.module.css'
 //ItemsNext
 import Link from 'next/link'
 
-const carSVG =    
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  xmlnsXlink="http://www.w3.org/1999/xlink"
-  width="32"
-  height="18"
-  viewBox="0 0 32 18"
-  >
-  <image
-    width="32"
-    height="18"
-    data-name="Camada 8 copiar 7"
-    xlinkHref="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAASCAYAAAA6yNxSAAACs0lEQVRIiZ3Ve6jfcxgH8NdhNNssLcLYijWZlVu2cBhF1DSzGtlE8Y+ypCQplBKRUm475BajNX/Ypi3M/Z4QSkoIzSG51GbH5cimx96/9d3v+zvndPau7/XzPM/ned7P5dM3uHYfY+Ak3IqzMWEU0V/wGG7GcGt1BOzV+/cu3IUPcBRW4HjMwcVx6OhcC/AkrsffOL1laQSM5sCjuA6LMQsf4hzMxRq8gpOxLA5W5H14Dm+iv2WxB0ai9DJcgflhYBDTMYTJue7A1aH+ADyCu+PwOrydAHe0rDfQi4GD8ARuyuZl4GccgkPzvX/kPsqzCmkJrsUALkgq3mlZ70IvBj7GZtyG1/F5cl/YNzT3xfntDb2K+sAwshqHx/GrsLK1S9B0YApW4bBQXCk4A19gLfbLBoU/8Dvm4YWGjR/zfCNOVlE+kLQUcz/gmaZOx4H+5KxwUTYoh54NxXOz9heewlbcFwZODTOFI7Aee+PgdNFsnJn1kr08qatO+bPmwPQU2SYsxL8tnnqjUjAxzo4Hp+CtsDGzjGzANpw7js1lOFVXLGqtjI73MAkz8FCl4IRU73hRud2Iz/ZAdzj6Kzpt+FWXQBXisS213VEUvpt6GAtl68gumZfq1nHgt8bCw/gen6bS549hfDTMSn2Vra/Tqh1UAP93QdHxOF7ENCzH0kT3NN7H7ZjaUK7WvD9nQk3BB3Fpl7PbMgMGU3jFwGt4Hl8m9aoL5mXyzUz/n5dZfkvOgqEUzVDD+Ks4H/dkRF9YBYVLGjKT86x5cGNmyXA2ryn5awU5IeP2mAjvSK8WG9/l36REMtCD6msa71fm6uAsvJz3SumWxjyY2BHqHsU35JD5Kafdt/gnKRovSr/yXFEXy6dliBVTu9DtwJ2J+N58f4PjMgH3BCcm559EuVgsNncC/wEcYZ1C6yNclQAAAABJRU5ErkJggg=="
-  ></image>
-</svg>
 
 const quartosSVG =
 <svg
@@ -91,7 +76,7 @@ export default function Card(props){
             </div>
             <div className={styles.ItemsCard}>
               <div className={styles.item}>
-                {carSVG}
+                <img src="/sisprofcardcar.webp" alt="Vagas" />
                 <p>2</p>
               </div>
               <div className={styles.item}>
