@@ -86,8 +86,8 @@ export default function Card(props){
 
         <div className={styles.CardInfo}>
             <div className={styles.CardTitle}>
-              <p>Apartamento <br />
-              <span>Moema - São Paulo</span></p>
+              <p>Apartamento </p>
+              <p><span>Moema - São Paulo</span></p>
             </div>
             <div className={styles.ItemsCard}>
               <div className={styles.item}>
