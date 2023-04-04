@@ -6,14 +6,11 @@ variable: '--Font',
 })
 
 export default function App({ Component, pageProps }) {
-  return(
+  return (
     <>
-    <div className={poppins.className}>
-      <Component {...pageProps} />
-    </div>
-      
+      <div className={poppins.className}>
+        <Component {...pageProps} />
+      </div>
     </>
-  )
-  
-  
+  );
 }

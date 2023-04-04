@@ -44,7 +44,7 @@ export default function Footer() {
                 <div className={styles.FooterContactForm}>
                     <form action="">
                         <div className={styles.TitleForm}>
-                            <h6>Contato:</h6>
+                            <p>Contato:</p>
                         </div>
                         <div className={styles.FormInputs}>
                             <input type="text" placeholder="Seu nome completo" />

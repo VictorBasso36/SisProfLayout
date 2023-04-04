@@ -47,7 +47,7 @@ export default function NavBar() {
         }
         <nav className={styles.MainNavbar}>
             <div className={styles.MainContainerNavbar}>
-                <Link href="/">
+                <Link href="/" title="Home">
                     <div className={styles.MainLogo}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

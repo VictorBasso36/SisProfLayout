@@ -22,7 +22,7 @@ export default function ParaComprar() {
           <div className={styles.Title}>
             <h2>Imóveis <br /><span>Semelhantes:</span></h2>
           </div>
-          <Link href="/Resultado?Parameters=">
+          <Link href="/Resultado">
             <div>
               <p>Veja Mais</p>
             </div>
@@ -64,7 +64,7 @@ export default function ParaComprar() {
           >
             {cards.map(item => (
             <SwiperSlide >
-              <Link href="/Detalhes?Parameters=" style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
+              <Link href="/Detalhes" style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
                 <Card/>
               </Link>
             </SwiperSlide>
