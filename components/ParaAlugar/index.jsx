@@ -23,7 +23,7 @@ export default function ParaAlugar() {
         <div className={styles.Title}>
           <h2>Imóveis para<br /><span>Alugar:</span></h2>
         </div>
-        <Link href="/Resultado">
+        <Link href="/Resultado-da-Pesquisa">
           <div>
             <p>Veja Mais</p>
           </div>

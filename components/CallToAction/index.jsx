@@ -62,7 +62,7 @@ export default function CallToAction() {
                       <p>Encontre o imóvel dos sonhos!</p>
                     </div>
                   </div>
-                  <Link href="/Resultado">
+                  <Link href="/Resultado-da-Pesquisa">
                     <div className={styles.callButton}>
                       <h2>Buscar agora</h2>
                     </div>

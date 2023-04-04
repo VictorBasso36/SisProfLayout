@@ -22,7 +22,7 @@ export default function ParaComprar() {
           <div className={styles.Title}>
             <h2>Imóveis <br /><span>Semelhantes:</span></h2>
           </div>
-          <Link href="/Resultado">
+          <Link href="/Resultado-da-Pesquisa">
             <div>
               <p>Veja Mais</p>
             </div>
