@@ -22,7 +22,7 @@ import Card from '../Card'
 
 export default function MaisVisitados() {
   //capturar da api
-  const cards = ['','','','','','','','','','','','','','','','','','','','','','','','','','','','',]
+  const cards = ['','','','','','','','','','','','']
   return (
     <section className={styles.SectionCards}>
       <div className={styles.SectionCardsContainer}>  
