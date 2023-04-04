@@ -75,6 +75,7 @@ a {
 /* carrousel */
 .swiper, swiper-container{
   z-index: unset!important;
+  height: 450px;
 }
 .swiper-wrapper{
   z-index: unset!important;
