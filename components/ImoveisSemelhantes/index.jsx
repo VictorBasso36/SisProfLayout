@@ -6,15 +6,27 @@ import styles from '@/styles/components/ParaComprar/ParaComprar.module.css'
 import Card from '../../components/Card'
 //ItemsNext
 import Link from 'next/link'
-
-import SwiperCore, { Navigation, Pagination, Autoplay  } from 'swiper';
+import { useEffect, useState } from 'react';
+import SwiperCore, { Navigation, Pagination, Autoplay, Lazy, Virtual } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import axios from 'axios';
 import 'swiper/swiper-bundle.css';
 
 export default function ParaComprar() {
-  //capturar da api
-  const cards = ['','','','','','','','','','','','','','','','','','','','','','','','','','','','',]
+  const [loaded, setLoaded] = useState(false);
+  const cards = ['','','','','','','','','','','','','','','','','','','','','','','',''];
+  const [virtualSlides, setVirtualSlides] = useState([]);
+
+  useEffect(() => {
+    const slides = cards.map((item, index) => (
+      <SwiperSlide key={index}>
+        <Link href="/Detalhes" style={{ width: '100%', maxWidth: '325px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <Card loading="lazy" style={{ height: '450px' }} />
+        </Link>
+      </SwiperSlide>
+    ));
+    setVirtualSlides(slides);
+  }, []);
   return (
     <section className={styles.SectionCards}>
       <div className={styles.SectionCardsContainer}>  
@@ -31,44 +43,40 @@ export default function ParaComprar() {
         </div>
         <div className={styles.CarrouselHere}>
         <Swiper
-            loop={true}
-            spaceBetween={10}
-            autoplay={{ delay: 6000 }}
-            slidesPerView={4}
-            navigation
-            grabCursor={true}
-            pointerEvents={'auto'}
-            modules={[Pagination, Navigation, Autoplay]}
-            breakpoints={{
-              280: {
-                slidesPerView: 1,
-                spaceBetween: 0,
-              },
-              880: {
-                slidesPerView: 2,
-                spaceBetween: 10,
-              },
-              1024: {
-                slidesPerView: 2,
-                spaceBetween: 10,
-              },
-              1224: {
-                slidesPerView: 3,
-                spaceBetween: 10,
-              },
-              1600: {
-                slidesPerView: 4,
-                spaceBetween: 5,
-              },
-            }}
+              loop={false}
+              spaceBetween={10}
+              autoplay={{ delay: 3000 }}
+              slidesPerView={4}
+              navigation
+              grabCursor={true}
+              lazy="true"
+              virtual
+              modules={[Pagination, Navigation, Autoplay, Virtual]}
+              style={{ height: '450px' }}
+              breakpoints={{
+                280: {
+                  slidesPerView: 1,
+                  spaceBetween: 0,
+                },
+                880: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                1024: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                1224: {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                },
+                1600: {
+                  slidesPerView: 4,
+                  spaceBetween: 5,
+                },
+              }}
           >
-            {cards.map(item => (
-            <SwiperSlide >
-              <Link href="/Detalhes" style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
-                <Card/>
-              </Link>
-            </SwiperSlide>
-            ))}
+            {virtualSlides}
           </Swiper>
       
         </div>
