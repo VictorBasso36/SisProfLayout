@@ -9,7 +9,6 @@ import 'swiper/swiper-bundle.css';
 SwiperCore.use([Navigation, Pagination, Lazy]);
 
 import styles from '@/styles/components/MaisVisitados/MaisVisitados.module.css'
-import stylescard from '../../src/styles/components/Card/Card.module.css'
 import Card from '../Card'
 
 
@@ -17,11 +16,8 @@ import Card from '../Card'
 
 export default function MaisVisitados() {
   const [loaded, setLoaded] = useState(false);
-  const cards = ['','','','','','','','','','','',''];
+  const cards = ['','','','','','','','','','','','','','','','','','','','','','','',''];
 
-  useEffect(() => {
-    setLoaded(true);
-  }, []);
 
   return (
     <section className={styles.SectionCards}>
@@ -37,7 +33,7 @@ export default function MaisVisitados() {
           </Link>
         </div>
         <div className={styles.CarrouselHere}>
-          {loaded && (
+
             <Swiper
               loop={false}
               spaceBetween={10}
@@ -46,6 +42,7 @@ export default function MaisVisitados() {
               navigation
               grabCursor={true}
               lazy="true"
+              modules={[Pagination, Navigation, Autoplay]}
               style={{ height: '450px' }}
               breakpoints={{
                 280: {
@@ -73,52 +70,12 @@ export default function MaisVisitados() {
               {cards.map((item, index) => (
                 <SwiperSlide key={index}>
                   <Link href="/Detalhes" style={{ width: '100%', maxWidth: '325px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-
-                      <div className={stylescard.MainCard}>
-                        <div className={stylescard.CardImage} 
-                        style={{ backgroundImage: 'url("/fachada.webp")',
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center'
-                        }}>
-
-                        </div>
-
-                        <div className={stylescard.CardInfo}>
-                            <div className={stylescard.CardTitle}>
-                              <p>Apartamento </p>
-                              <p>Moema - São Paulo</p>
-                            </div>
-                            <div className={stylescard.ItemsCard}>
-                              <div className={stylescard.item}>
-                                <img src="/sisprofcardcar.webp" alt="sisprofcardcar" height="50px" width="50px" />
-                                <p>2</p>
-                              </div>
-                              <div className={stylescard.item}>
-                                <img src="/sisprofcardquartos.webp" alt="sisprofcardquartos" height="50px" width="50px" />
-                                <p>2</p>
-                              </div>
-                              <div className={stylescard.item}>
-                                <img src="/sisprofcardbanheiros.webp" alt="sisprofcardbanheiros" height="50px" width="50px" />
-                                <p>2</p>
-                              </div>
-                              <div className={stylescard.item}>
-                                
-                                <img src="/sisprofcardtamanho.webp" alt="sisprofcardtamanho" height="50px" width="50px" />
-                                <p>100m²</p>
-                              </div>
-
-                            </div>
-                        </div>
-                        <div className={stylescard.PriceCard}>
-                            <p>venda: R$ <strong>1.000.000</strong></p>
-                        </div>
-                      </div>
-
+                    <Card loading="lazy" style={{ height: '450px' }} />
                   </Link>
                 </SwiperSlide>
-              ))}
+              ))} 
             </Swiper>
-          )}
+ 
         </div>
       </div>
     </section>
