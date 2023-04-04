@@ -70,13 +70,43 @@ export default function MaisVisitados() {
               },
             }}
           >
-            {cards.map(item => (
+       
             <SwiperSlide >
               <Link href="/Detalhes" style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
                 <Card/>
               </Link>
             </SwiperSlide>
-            ))}
+            <SwiperSlide >
+              <Link href="/Detalhes" style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
+                <Card/>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide >
+              <Link href="/Detalhes" style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
+                <Card/>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide >
+              <Link href="/Detalhes" style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
+                <Card/>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide >
+              <Link href="/Detalhes" style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
+                <Card/>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide >
+              <Link href="/Detalhes" style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
+                <Card/>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide >
+              <Link href="/Detalhes" style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
+                <Card/>
+              </Link>
+            </SwiperSlide>
+          
           </Swiper>
         </div>
         
