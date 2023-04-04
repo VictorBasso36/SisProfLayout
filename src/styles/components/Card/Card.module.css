@@ -79,8 +79,7 @@
     font-size: 18px;
 }
 
-
-.CardTitle span{
-    
+.CardTitle p:nth-child(2){
     font-weight: bold;
 }
+
