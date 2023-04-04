@@ -1,27 +1,18 @@
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
 
-import SwiperCore, { Navigation, Pagination, Autoplay  } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Autoplay, Lazy } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import axios from 'axios';
 import 'swiper/swiper-bundle.css';
 
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination, Lazy]);
 
 import styles from '@/styles/components/MaisVisitados/MaisVisitados.module.css'
-
-//ItemsNext
-
-
-
-
-
-
 
 import Card from '../Card'
 
 export default function MaisVisitados() {
-  //capturar da api
   const cards = ['','','','','','','','','','','','','','','','','','','','','','','','','','','','',]
   return (
     <section className={styles.SectionCards}>
@@ -35,17 +26,17 @@ export default function MaisVisitados() {
               <p>Veja Mais Imóveis</p>
             </div>
           </Link>
-        
         </div>
         <div className={styles.CarrouselHere}>
           <Swiper
             loop={false}
             spaceBetween={10}
+            autoplay={{ delay: 3000 }}
             slidesPerView={4}
             navigation
             grabCursor={true}
-            pointerEvents={'auto'}  
-            modules={[Pagination, Navigation, Autoplay]}
+            lazy={true}
+            style={{ height: '450px' }}
             breakpoints={{
               280: {
                 slidesPerView: 1,
@@ -69,16 +60,15 @@ export default function MaisVisitados() {
               },
             }}
           >
-            {cards.map(item => (
-            <SwiperSlide >
-              <Link href="/Detalhes" style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
-                <Card/>
-              </Link>
-            </SwiperSlide>
+            {cards.map((item, index) => (
+              <SwiperSlide key={index}>
+                <Link href="/Detalhes" style={{ width: '100%', maxWidth: '325px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Card />
+                </Link>
+              </SwiperSlide>
             ))}
           </Swiper>
         </div>
-        
       </div>
     </section>
   )
