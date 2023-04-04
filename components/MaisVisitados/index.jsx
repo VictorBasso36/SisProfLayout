@@ -41,7 +41,6 @@ export default function MaisVisitados() {
           <Swiper
             loop={false}
             spaceBetween={10}
-            autoplay={{ delay: 3000 }}
             slidesPerView={4}
             navigation
             grabCursor={true}
