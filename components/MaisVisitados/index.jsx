@@ -39,7 +39,7 @@ export default function MaisVisitados() {
         </div>
         <div className={styles.CarrouselHere}>
           <Swiper
-            loop={false}
+
             spaceBetween={10}
             autoplay={{ delay: 3000 }}
             slidesPerView={4}
