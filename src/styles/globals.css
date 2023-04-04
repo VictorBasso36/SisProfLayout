@@ -130,3 +130,15 @@ a {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+.swiper-container {
+	position: relative !important;
+}
+.swiper-slide-duplicate:first-child {
+	position: absolute !important;
+	width: 100% !important; /* seems like you can remove this line but I didn't test without it */
+	left: 0 !important;
+}
+.swiper-wrapper::before {
+	content: '' !important;
+}

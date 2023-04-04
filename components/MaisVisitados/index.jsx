@@ -22,7 +22,7 @@ import Card from '../Card'
 
 export default function MaisVisitados() {
   //capturar da api
-  const cards = ['','','','','','','','','','','','']
+  const cards = ['','','','','','','','','','','','','','','','','','','','','','','','','','','','',]
   return (
     <section className={styles.SectionCards}>
       <div className={styles.SectionCardsContainer}>  
@@ -39,7 +39,7 @@ export default function MaisVisitados() {
         </div>
         <div className={styles.CarrouselHere}>
           <Swiper
-
+            loop={false}
             spaceBetween={10}
             autoplay={{ delay: 3000 }}
             slidesPerView={4}
@@ -70,43 +70,13 @@ export default function MaisVisitados() {
               },
             }}
           >
-       
+            {cards.map(item => (
             <SwiperSlide >
               <Link href="/Detalhes" style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
                 <Card/>
               </Link>
             </SwiperSlide>
-            <SwiperSlide >
-              <Link href="/Detalhes" style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
-                <Card/>
-              </Link>
-            </SwiperSlide>
-            <SwiperSlide >
-              <Link href="/Detalhes" style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
-                <Card/>
-              </Link>
-            </SwiperSlide>
-            <SwiperSlide >
-              <Link href="/Detalhes" style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
-                <Card/>
-              </Link>
-            </SwiperSlide>
-            <SwiperSlide >
-              <Link href="/Detalhes" style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
-                <Card/>
-              </Link>
-            </SwiperSlide>
-            <SwiperSlide >
-              <Link href="/Detalhes" style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
-                <Card/>
-              </Link>
-            </SwiperSlide>
-            <SwiperSlide >
-              <Link href="/Detalhes" style={{width:100+"%", maxWidth:"325px", display:"flex", alignItems: "center", justifyContent: "center"}}>
-                <Card/>
-              </Link>
-            </SwiperSlide>
-          
+            ))}
           </Swiper>
         </div>
         
