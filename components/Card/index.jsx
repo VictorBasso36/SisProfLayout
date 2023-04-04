@@ -77,7 +77,7 @@ export default function Card(props){
     
     <div className={styles.MainCard}>
         <div className={styles.CardImage} 
-        style={{ backgroundImage: 'url("https://www.construtoralaguna.com.br/images/empreendimentos/ampio/fachada.webp")',
+        style={{ backgroundImage: 'url("/fachada.webp")',
                  backgroundSize: 'cover',
                  backgroundPosition: 'center'
         }}>

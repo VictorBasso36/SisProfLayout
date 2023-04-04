@@ -15,7 +15,7 @@ export default function CardResultado(props){
     <div className={styles.MainCard}>   
         <div className={styles.MainContentCard}>
             <div className={styles.ImagemCapa} style={{
-                backgroundImage: 'url("https://www.construtoralaguna.com.br/images/empreendimentos/ampio/fachada.webp")',
+                backgroundImage: 'url("/fachada.webp")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'    
                 }}>

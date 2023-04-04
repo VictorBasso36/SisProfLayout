@@ -12,7 +12,7 @@ export default function AgendarVisita(props) {
     <>
         <div className={styles.MainVisita}>
             <div className={styles.MainImage} style={{
-                backgroundImage: "url('https://baldoo.com.br/a.webp')",
+                backgroundImage: "url('/a.webp')",
                 backgroundSize: "cover"
             }}>
             </div>

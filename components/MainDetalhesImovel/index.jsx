@@ -100,7 +100,7 @@ export default function MainDetalhesImovel(props){
             {imgs.map(item => (
             <SwiperSlide className={styles.DetailsSlides} style={{
               //imgapi
-              backgroundImage: 'url("https://baldoo.com.br/a.webp")',
+              backgroundImage: 'url("/a.webp")',
               backgroundSize: 'cover',
               backgroundPosition: 'center'
             }}>

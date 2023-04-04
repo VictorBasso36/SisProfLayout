@@ -14,7 +14,7 @@ export default function Banner() {
             <div className={styles.MainBannerContainer}>
                 <div className={styles.Banner}>
                     <div className={styles.BannerImage} 
-                    style={{ backgroundImage: 'url("https://baldoo.com.br/a.webp")',
+                    style={{ backgroundImage: 'url("/a.webp")',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center'
                     }}>

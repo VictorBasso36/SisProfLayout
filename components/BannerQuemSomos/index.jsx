@@ -13,7 +13,7 @@ export default function BannerQuemSomos() {
         <section className={styles.MainBanner}>
 
                 <div className={styles.ImageBannerQuemSomos} style={{
-                    backgroundImage: "url('https://baldoo.com.br/a.webp')",
+                    backgroundImage: "url('/a.webp')",
                     backgroundSize: "cover"
                 }}>
 
