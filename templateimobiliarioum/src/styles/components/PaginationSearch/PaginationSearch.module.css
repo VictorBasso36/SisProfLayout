@@ -1,0 +1,58 @@
+.MainNavigation{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+}
+
+.MainNavigation ul{
+    display: flex;
+    list-style: none;
+    max-width: 550px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pageLink{
+    width: 30px;
+    height: 25px;
+    transition: all 500ms;
+    position: 10px;
+    border-radius: 25px;
+}
+
+.disabled button{
+    pointer-events: none;
+    opacity: 0.2;
+    background-color: transparent;
+    
+   
+}
+
+.pageItem button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 500ms;
+}
+
+
+.pageItem button p{
+    background-color: transparent;
+    border: none;
+    font-weight: normal;
+    line-height: 25px;
+    font-size: 18px;
+    transition: all 500ms;
+}
+
+
+.active button{
+    background-color: transparent;
+    text-decoration:underline;
+
+  
+}

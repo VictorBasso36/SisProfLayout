@@ -1,0 +1,160 @@
+.SectionCards{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 0px;
+}
+
+.SectionCardsContainer{
+    width: 90%;
+    max-width: var(--max-width);
+}
+
+.HeaderCards{
+    display: flex;
+    color: var(--Text-Color);
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.HeaderCards p{
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.HeaderCards p:hover{
+    color: var(--Main-Color);
+}
+
+
+.HeaderCards h2{
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.HeaderCards h2 span{
+    font-size: 50px;
+    line-height: 100%;
+    font-weight: bolder;
+}
+
+.CarrouselHere{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 450px;
+}
+
+
+@media screen and (min-width:850px) and (max-width:1024px){
+
+}
+
+@media screen and (min-width:550px) and (max-width:850px){
+    .SectionCards{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 120px 0px;
+    }
+    
+    .SectionCardsContainer{
+        width: 90%;
+        max-width: var(--max-width);
+    }
+    
+    .HeaderCards{
+        display: flex;
+        color: var(--Text-Color);
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    
+    .HeaderCards p{
+        font-size: 18px;
+        text-decoration: underline;
+    }
+    
+    .HeaderCards p:hover{
+        color: var(--Main-Color);
+    }
+    
+    
+    .HeaderCards h2{
+        font-size: 22px;
+        font-weight: normal;
+    }
+    
+    .HeaderCards h2 span{
+        font-size: 50px;
+        font-weight: bolder;
+    }
+    
+    .CarrouselHere{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+}
+
+@media screen and (min-width:280px) and (max-width:550px){
+    .SectionCards{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 120px 0px;
+    }
+    
+    .SectionCardsContainer{
+        width: 90%;
+        max-width: var(--max-width);
+    }
+    
+    .HeaderCards{
+        display: flex;
+        color: var(--Text-Color);
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    
+    .HeaderCards p{
+        font-size: 18px;
+        text-decoration: underline;
+    }
+    
+    .HeaderCards p:hover{
+        color: var(--Main-Color);
+    }
+    
+    
+    .HeaderCards h2{
+        font-size: 22px;
+        font-weight: normal;
+    }
+    
+    .HeaderCards h2 span{
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    
+    .CarrouselHere{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

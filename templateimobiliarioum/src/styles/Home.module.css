@@ -1,0 +1,50 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.MainBanner{
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+  height: 100vh;
+  max-height: 800px;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../../public/sisprofbg.webp');
+}
+
+.DetailShawn{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-color: transparent;
+  background-image: url('../../public/bgsisprofhome.webp');
+}
+
+
+@media screen and (max-width: 1024px){
+  .DetailShawn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-repeat: repeat-x;
+    background-size: 1850px;
+    background-color: transparent;
+    background-image: url('../../public/bgsisprofhome.webp');
+  } 
+}
