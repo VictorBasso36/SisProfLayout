@@ -279,8 +279,7 @@ export default function Resultado() {
                         onBlur={handleInputBlur}
                       />
                       <p style={{ opacity: isInputFocused || !isInputEmpty ? 0 : 1 }}>
-                        Procure por cidade ou bairro.
-                        
+                        Procure por cidade ou bairro.                  
                       </p>
                     </div>   
                   </div>
@@ -295,8 +294,8 @@ export default function Resultado() {
                     </div>
                   </div>
                    {/*TIPO DE IMOVEL*/}
-                  <div className={styles.typeImovel} onClick={() => setImovelType(!imovelType)} style={imovelType ? { backgroundColor: 'var(--Main-Color)' } : {}}>
-                    <p>TIPO DE IMÓVEL</p>
+                  <div className={styles.typeImovel} onClick={() => setImovelType(!imovelType)} style={imovelType ? { backgroundColor: 'var(--Second-Color)' } : {}}>
+                    <p style={imovelType ? { color: 'var(--Main-Color)' } : {}}>TIPO DE IMÓVEL</p>
                     <div className={`${styles.typeImovelArrow} ${imovelType ? styles.arrowRotated : ""}`}>
                       {arrowIcon}  
                     </div>  
@@ -326,11 +325,149 @@ export default function Resultado() {
                           />
                         </label>
                       </div>
-                    }      
+                    }    
+                  </div>
+                  {/* more filters */}
+                  <div className={styles.MoreFilters} onClick={() => setMoreFilters(!moreFilters)} style={moreFilters ? { backgroundColor: 'var(--Second-Color)' } : {}}>
+                    <div className={styles.MoreFiltersIcons}>
+                      {funilIcon}
+                      <p style={moreFilters ? { color: 'var(--Main-Color)' } : {}}>MAIS FILTROS</p>
+                    </div>
+                    <div className={`${styles.typeImovelArrow} ${moreFilters ? styles.arrowRotated : ""}`}>
+                      {arrowIcon}  
+                    </div>  
+                      
+                  </div>  
+                  {/* Oculte */}
+                  {moreFilters &&
+                    <div className={styles.Advancedmenu}>
+                      <div className={styles.dropPaternLittle} onClick={handleValueDropdownClickSuites} style={valueRange ? { backgroundColor: 'var(--Main-Color)' } : {}}>
+                          <p>VALOR</p>
+                          <div className={`${styles.typeImovelArrow} ${valueRange ? styles.arrowRotated : ""}`}>
+                            {arrowIcon}  
+                          </div>  
+                          {valueRange &&
+                          <div className={styles.MainDropDownRange} onClick={(e) => e.stopPropagation()}>
+                              <div className={styles.rangeInit}>
+                                <p>DE:</p>
+                                <input type="text" placeholder='R$' value={valueInit} onChange={handleValueRangeInitChange}/>
+                              </div>
+                              <div className={styles.rangeInit}>
+                                <p>ATÉ:</p>
+                                <input type="text" placeholder='R$' value={valueEnd} onChange={handleValueRangeEndChange}/>
+                              </div>
+                          </div> 
+                          }
+                      </div>
+                      <div className={styles.dropPatern} onClick={handleDormitoriosClickSuites} style={dormitoriosRange ? { backgroundColor: 'var(--Main-Color)' } : {}}>
+                        <p>DORMINTÓRIOS</p>
+                        <div className={`${styles.typeImovelArrow} ${dormitoriosRange ? styles.arrowRotated : ""}`}>
+                          {arrowIcon}  
+                        </div>  
+                        {dormitoriosRange &&
+                          <div className={styles.MainDropDownRange} onClick={(e) => e.stopPropagation()}>
+                            <div className={styles.rangeInit}>
+                              <p>DE:</p>
+                              <input type="text" placeholder='Dormi.' value={dormitoriosInitValue} onChange={handledormitoriosInitChange}/>
+                            </div>
+                            <div className={styles.rangeInit}>
+                              <p>ATÉ:</p>
+                              <input type="text" placeholder='Dormi.' value={dormitoriosEndValue} onChange={handledormitoriosEndChange} />
+                            </div>
+                          </div> 
+                        }
+                      </div>
+                      <div className={styles.dropPaternLittle} onClick={handleDropdownClickSuites} style={suitesRange ? { backgroundColor: 'var(--Main-Color)' } : {}}>
+                        <p>SUÍTES</p>
+                        <div className={`${styles.typeImovelArrow} ${suitesRange ? styles.arrowRotated : ''}`}>
+                        {arrowIcon}
+                        </div>
+                        {suitesRange && (
+                          <div className={styles.MainDropDownRange} onClick={(e) => e.stopPropagation()}>
+                            <div className={styles.rangeInit}>
+                              <label>
+                                <p>DE:</p>
+                                <input type="text" placeholder='St.' value={rangeInitValue} onChange={handleRangeInitChange} />
+                              </label>
+                            </div>
+                            <div className={styles.rangeInit}>
+                              <label>
+                                <p>ATÉ:</p>
+                                <input type="text" placeholder='St.' value={rangeEndValue} onChange={handleRangeEndChange} />
+                              </label>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                      <div className={styles.dropPatern} onClick={handleGaragensDropdownClick} style={garagensRange ? { backgroundColor: 'var(--Main-Color)' } : {}}>
+                        <p>GARAGENS</p>
+                        <div className={`${styles.typeImovelArrow} ${garagensRange ? styles.arrowRotated : ""}`}>
+                          {arrowIcon}  
+                        </div>  
+                        {garagensRange &&
+                          <div className={styles.MainDropDownRange3} onClick={(e) => e.stopPropagation()}>
+                            <div className={styles.rangeInit}>
+                              <p>DE:</p>
+                              <input type="text" placeholder='Gar.' value={rangeGaragensInitValue} onChange={handleGaragensRangeInitChange}/>
+                            </div>
+                            <div className={styles.rangeInit}>
+                              <p>ATÉ:</p>
+                              <input type="text" placeholder='Gar.' value={rangeGaragensEndValue} onChange={handleGaragensRangeEndChange}/>
+                            </div>
+                          </div> 
+                        }
+                      </div>
+                      <div className={styles.dropPatern} onClick={handleDropdownClick} style={optionsItemsRadio ? { backgroundColor: 'var(--Main-Color)' } : {}}>
+                        <p>OPICIONAIS</p>
+                        <div className={`${styles.typeImovelArrow} ${optionsItemsRadio ? styles.arrowRotated : ""}`}>
+                          {arrowIcon}  
+                        </div>  
+                        {optionsItemsRadio && (
+                          <div className={styles.MainDropDown} onClick={(e) => e.stopPropagation()}>
+                            {options.map((option) => (
+                              <div key={option} className={styles.RadioButton}>
+                                <label htmlFor={option}>{option}
+                                <input
+                                  type="checkbox"
+                                  id={option}
+                                  value={option}
+                                  checked={selectedOptions.includes(option)}
+                                  onChange={handleOptionChange}
+                                  
+                                />
+                                </label>
+                              </div>
+                            ))}
+                          </div> 
+                        )}
+                      </div>
+                    </div>
+                  }
+                  {/* coderef */}
+                  <div className={styles.CodeRef}>
+                    <div className={styles.IconRef} onClick={handleRefIconClick}>
+                      {searchIcon}
+                    </div>
+                    
+                    <input type="text"
+                    ref={inputRefCode}
+                    value={refCode}
+                    onChange={handleInputRefCodeChange}
+                    onFocus={handleInputRefFocus}
+                    onBlur={handleInputRefBlur} />
+                    <p style={{ opacity: isRefCodeFocused || !isInputRefCodeEmpty ? 0 : 1 }}>REFERÊNCIA</p>
+                    
                   </div>
                 </div>
               </form>
             </section>
+
+
+
+
+
+
+
             <div className={styles.ListResultado}>
               {/* Pagination Loop pos API */}
                 <CardResultado/>
