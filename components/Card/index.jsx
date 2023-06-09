@@ -7,6 +7,54 @@ import styles from '@/styles/components/Card/Card.module.css'
 //ItemsNext
 import Link from 'next/link'
 
+
+
+export default function Card(props){
+  return (
+    
+    <div className={styles.MainCard}>
+        <div className={styles.CardImage} 
+        style={{ backgroundImage: 'url("/fachada.webp")',
+                 backgroundSize: 'cover',
+                 backgroundPosition: 'center'
+        }}>
+
+        </div>
+
+        <div className={styles.CardInfo}>
+            <div className={styles.CardTitle}>
+              <p>Apartamento </p>
+              <p>Moema - São Paulo</p>
+            </div>
+            <div className={styles.ItemsCard}>
+              <div className={styles.item}>
+                {carSVG}
+                <p>2</p>
+              </div>
+              <div className={styles.item}>
+                {quartosSVG}
+                <p>2</p>
+              </div>
+              <div className={styles.item}>
+                {banheirosSVG}
+                <p>2</p>
+              </div>
+              <div className={styles.item}>
+                
+                {metragemSVG}
+                <p>100m²</p>
+              </div>
+
+            </div>
+        </div>
+        <div className={styles.PriceCard}>
+            <p>venda: R$ <strong>1.000.000</strong></p>
+        </div>
+    </div>
+   
+  )
+}
+
 const carSVG =    
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -70,50 +118,3 @@ viewBox="0 0 28 19"
     xlinkHref="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAATCAYAAACDW21BAAACYUlEQVRIia3VbcjOZxgG8B/P7aVNXkJaDflkk5eIh0hqE1qaLbZM3kORDyskSfEF8VGifJB8EEKaxZqQlVJYa4S0svJO3pqUGevK8ay7+156noej/p3X/77/13WcL8d5Xm1uHmqnCp9jEUbhMS7jOe5hbdbvhLbZ3BHH83yLHugS4g/QCb9jxPsi3ItGzMjhH6Jfoirkp/A9Tue/VqOCcRiEj/E0djX+xA4cwRUMxHLsxxfvEuFGLAzZJ4nmIyzFYjzAbGzCVnyKXnUntYCw1OXXvM/FSszDnmSg4A56Z/0b+tad1ALChtRJIntZ9f8/sSULT7LuV/V9qwgL5scWskPYgAGp7zH0wd8hG4xJdSe1kHAyRqeOC1On3mmNE5gW0exOb87EgrrTmoGmGu3Dz7iRCL+q2Ts3girfXMJIbMYYrMe15hKWSfMas9IGB3E7InmRFPdM9NMzID6Lcg8n3WXfw/z2F7ribjJ0Hd3xOv37simlZfMvie5LDMFJDMW6NHzpx12ZPHuT2mX4KVHfQn9cwFQcwJw48SLZaazURLwodkk2XMW5iKcJr1L7+9iGKfgjEdzElmhge2p/FO3j7JRK1FdLfCD2SF0R3mxuqHo/XLU+GzstdnxG4qNSvvIUT89H6s3F2PRrq1AI12R21kb5f5gXgcyJxy1G21xJlcj8bfg6dSmt8CwCa46TRaH/oWnDN/gRZ9LcxYnSGp0xLMN7OCZELN9FneWO3Ikf0k7VY7GgjMbSSh1y7VVqb/wVmBjpFykXh0rqLmJV0lmNQlx6uFu+Lwquja7M3UL8GI3/ApdGjN0+aIiQAAAAAElFTkSuQmCC"
   ></image>
 </svg>
-
-
-export default function Card(props){
-  return (
-    
-    <div className={styles.MainCard}>
-        <div className={styles.CardImage} 
-        style={{ backgroundImage: 'url("/fachada.webp")',
-                 backgroundSize: 'cover',
-                 backgroundPosition: 'center'
-        }}>
-
-        </div>
-
-        <div className={styles.CardInfo}>
-            <div className={styles.CardTitle}>
-              <p>Apartamento </p>
-              <p>Moema - São Paulo</p>
-            </div>
-            <div className={styles.ItemsCard}>
-              <div className={styles.item}>
-                <img src="/sisprofcardcar.webp" alt="sisprofcardcar" height="50px" width="50px" />
-                <p>2</p>
-              </div>
-              <div className={styles.item}>
-                <img src="/sisprofcardquartos.webp" alt="sisprofcardquartos" height="50px" width="50px" />
-                <p>2</p>
-              </div>
-              <div className={styles.item}>
-                <img src="/sisprofcardbanheiros.webp" alt="sisprofcardbanheiros" height="50px" width="50px" />
-                <p>2</p>
-              </div>
-              <div className={styles.item}>
-                
-                <img src="/sisprofcardtamanho.webp" alt="sisprofcardtamanho" height="50px" width="50px" />
-                <p>100m²</p>
-              </div>
-
-            </div>
-        </div>
-        <div className={styles.PriceCard}>
-            <p>venda: R$ <strong>1.000.000</strong></p>
-        </div>
-    </div>
-   
-  )
-}

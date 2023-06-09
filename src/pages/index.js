@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 
 //Components
 import NavBar from '../../components/Navbar'
+import MainBusca from '../../components/MainBusca'
 import CallToAction from '../../components/CallToAction'
 import Card from '../../components/Card'
 import MaisVisitados from '../../components/MaisVisitados'
@@ -33,16 +34,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-
         <div className={styles.MainBanner}>
           <div className={styles.DetailShawn}>
-
           </div>
-
           <NavBar/>
-          <h1>Aguardando End Points Pesquisa</h1>
+          <MainBusca/>
         </div>
-
         <CallToAction/>
         <MaisVisitados/>
       </main>

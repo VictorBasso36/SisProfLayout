@@ -74,6 +74,37 @@ const metragemSVG =
   ></image>
   </svg>
 
+const photoSVG =
+<svg
+xmlns="http://www.w3.org/2000/svg"
+xmlnsXlink="http://www.w3.org/1999/xlink"
+width="29"
+height="26"
+viewBox="0 0 29 26"
+>
+<image
+  width="29"
+  height="26"
+  data-name="Camada 127"
+  xlinkHref="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAaCAYAAABLlle3AAAC6UlEQVRIibXWW6jlYxgG8N+2t2MZTDMZhxBpkEjI4caocUpKcmNcDKYZNw5NSTlcEIWUHC8ok5HGqRwyLpQoSVKjMJFpcyGDlBwG22DvpbeeVV+rtf5rmeGp1fr+fe/3Pt97/qZWrjjVBFiGm3AB9kdv4MgUvsVGPIm/ulTOTEB4CF7GGWPkjsSZOB7rsbA7pLeEcB6v41NMxzqxutYrcBpuwCt4e1dJD8eFWb+JVfhthGzF6SUcgWsnJT0QJyd+dfvfsRLH5ntjB2FhC97AWpyPdfghHH/jC3xSHuuTnoIH4qJh+BKbx3il8CpW4yA8PrC3E09VuIr0XDyKE5rN+QFvlJU7JiB9C+/gnIEM3gd7x+17lMIbQ1guuBfP1UaTKPU/2yg4Klla2fonPsP7+AlzuApLm+ydT5ndiktweZEel806fE9iOQyH4eYoXdTs93KpB1Oj2/MbRIXvvDJipin0PzqKupLp2WSoeKUU74lDs/9YSub6EQk3F45em71TcesgFuPphvAFbAjpXjgR1+F0XI1vcPsQPf2Q9SZpDusSw8J9uCM37uPDJNCGuK9C8CI+GqVwmGUt9sOl+X4Pdw8Q9vF1rPs5Ll/VpXQc6fJ0JSn8XztkP065iKt3mXRRrDUiI1uUB77P9wFNyf1r0l8ady4bI1v5sSTrHUPG38Sks4lX4aLEaxSqlZ6dvS1dSseR1o1fy/os3DlCrrxwVzpRdalNu0MqffmDyFY5PJNxV03hmHSozXlVFB4eZ+kkdfoj1qQjVSO4EpelPKYTx37SbEodd6K1tNfxxNiKizNt6i20b1y6NOe25YWxpmPmLvT1zzS3nO561+CruPKk9NjFmSDbU5/fjTGwlxE3N5PsXJ5ftbznIzQs3gvJ6K3NBWdi+ZIh8prRdk3kdtaBJxKrg/EIbovCkcXd3NyEcjUYSn/h3SKt5lyj6n4cnbn5f6DIazCs78/TqsVKiiuaG/2XKI7P8RBm/wEwMqq5C7fWxwAAAABJRU5ErkJggg=="
+></image>
+</svg>
+
+const videoSVG =
+<svg
+xmlns="http://www.w3.org/2000/svg"
+xmlnsXlink="http://www.w3.org/1999/xlink"
+width="27"
+height="26"
+viewBox="0 0 27 26"
+>
+<image
+  width="27"
+  height="26"
+  data-name="Camada 126"
+  xlinkHref="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAaCAYAAABGiCfwAAAC+klEQVRIibXWW8imUxQH8N/3znwOY3wZblxMTiOGyGEQEp9IOV1wwxghQjlPSINQJKKccg5JxijFBSk5FBqSM7mYZsxQLpDDNBh8zGjV/+Hpnfd93pka/3ra+117vfu/11p7rb3Gjp2cJxjH7TgHszCFxbga3/sPh+FWTEayHPfhXiPQy/JO+BEL8Q6uxbM4G99h/+hdhqU4BHfiRqzFPXh1FFlZNi0nX4+98W1rfWu8FmsuwgO4GTf07XNoDvkSThpG1svpym079xHJqQ/HzyF6fgBR4V2cihMxb8D6v2SX4HX80uGB6zNe2aFTB/kTF3eRzUocuvB11r4ZobcKe3SRFWaP2GTLvnEYdsDqLrIXccaITc7PeF6HzvYhW9JFVnHYAncP0TkXx+Fp3IW9huh9lAv1VBfZMpyAy/ECjsauOBhP4DE8nqu/El/gupDOwWkh2iq/h6KpIBNJ6mlDFH/DjFSV8SE6b+KoLrLpqR5f4UPchJ+SzLXxr9HbNiRr85VHZtZhc5A9Y/3n2GcATyX97CJ7En91JeNGYGlydVUu2+K4dQGuwtzGsskUUlms2OyOdSM4xvJVvK7BJ7GsLtxBqbOFN/ABTp4ewZqMC2PhkpysC3/HnafgrZBVKM7CgXgY9+OzlLEFDVmTrHVRXsb8TXBhhWCbzOug7+GIxLzBnMaNbdSFOD7PR2/Qzi2sz7Ru8O+Zz0wqTfXprmuTjWUs069I3DYGvcTjlehOJUUGop/soXz/C0a5alMx3srNDbC5ydak1A3kacj+aC3MSCLu0pJVhVjUV86qOF/at+nHOCA39BHsFvnKNtlE6w/VHtyBY1qyI9NRbdeSLRrQUVUyv43b8iytwPvp2Fb3kuEXtv6wPOOXLdmyjD+0ZCv6iMqKKksPpo2oy3dB3rjqTyZKUO1aPfvV1FQLV29b4UzsmHljZaVE6VXeVMdVOD1Jews+TV0sVIV5NN++5bHmiam36RnsF8XasO2yQbJqbqriN7LnQlwkGwL/ADAHnmhoSQWmAAAAAElFTkSuQmCC"
+></image>
+</svg>
 
 export default function MainDetalhesImovel(props){
   //capturar da api
@@ -136,10 +167,10 @@ export default function MainDetalhesImovel(props){
                 <div className={styles.MainTitle}>
                   <div className={styles.MainTitleHeader}>
                       <div className={styles.buttonMainTitle}>
-                        <p>FOTOS</p>
+                        {photoSVG}<p>FOTOS</p>
                       </div>
                       <div className={styles.buttonMainTitle}>
-                        <p>VÍDEOS</p>
+                        {videoSVG}<p>VÍDEOS</p>
                       </div>
                   </div>
                   <div className={styles.TitleAndRef}>

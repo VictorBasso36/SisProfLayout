@@ -44,7 +44,31 @@ export default function Detalhes() {
 
                     <div className={styles.TextDescricao}>
                         <h2>DESTALHES DO IMÓVEL:</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                        <div className={styles.divInfoBlock}>
+
+                          <div className={styles.InfoBlock}>
+                            <p><span>Mobiliado: </span>Sim</p>
+                            <p><span>Armário Cozinha: </span>Sim</p>
+                            <p><span>Armário Dorm.: </span>Sim</p>
+                            <p><span>Garagem: </span>2</p>
+                            <p><span>Suíte: </span>1</p> 
+                          </div>
+                          <div className={styles.InfoBlock}>
+                            <p><span>Elevador:</span> Sim</p>
+                            <p><span>Portaira:</span> Sim</p>
+                            <p><span>Dormitórios:</span> 3</p>
+                            <p><span>Andares:</span> 3</p>
+                            <p><span>Sala:</span> SALA TV / SACADA</p>
+                          </div>
+                          <div className={styles.InfoBlock}>
+                            <p><span>Lazer: </span>Sim</p>
+                            <p><span>Varanda: </span>Sim</p>
+                            <p><span>Banheiros: </span>2</p>
+                            <p><span>Apt. por Andar: </span>4</p>
+                            <p><span>Área de Serviço: </span>Completa com vários armários.</p>
+                          </div>
+
+                        </div>
                     </div>  
                  
                   </div>
