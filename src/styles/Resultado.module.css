@@ -40,6 +40,7 @@
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
+
 }
 
 .DivInput{
@@ -139,6 +140,7 @@
     height: 100%;
     position: relative;
     cursor: pointer;
+    margin-right: 20px;
     margin-top: 10px;
     height: 45px;
     background-color: #edc750;
@@ -170,6 +172,7 @@
     position: relative;
     height: 45px;
     cursor: pointer;
+    margin-right: 20px;
     font-size: 13px;
     margin-top: 10px;
     display: flex;
@@ -410,6 +413,7 @@
     font-size: 13px;
     cursor: pointer;
     height: 40px;
+    margin-right: 20px;
     margin-top: 10px;
     display: flex;
     align-items: center;
@@ -577,20 +581,71 @@
 }
 
 
-@media screen and (min-width:280px) and (max-width:550px){
+@media screen and (min-width:280px) and (max-width:850px){
+    .MainDropDownTypeImovel{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: var(--Main-Color);
+        padding: 20px;
+        margin-top: 0px;
+        right: unset;
+        left: 0;
+        justify-content: space-between;
+        border-radius: var(--border-radius);
+        position: absolute;
+        width: 200px;
+        flex-direction: column;
+        display: flex;
+        max-height: 230px;
+        flex-wrap: wrap;
+        margin-bottom: -140px;  
+        z-index: 10; 
+    }
+
+    .MainDropDown{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: var(--Main-Color);
+        padding: 10px;
+        margin-top: 150px;
+        right: unset;
+        left: 0;
+        justify-content: space-between;
+        border-radius: var(--border-radius);
+        position: absolute;
+        width: 95vw;
+        margin-left: -2vw;
+        display: flex;
+        max-height: unset;
+        flex-wrap: wrap;
+        margin-bottom: -130px;  
+        z-index: 10; 
+    }
+
     .MainDropDownTypeImovel .labelMainType{
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    
+    .RadioButton{
+        width: 50%;
+        margin-top: 15px;        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .RadioButton label{
+        width: 100%;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .MainDropDownRange{
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         background-color: var(--Main-Color);
         padding: 15px;
         margin-top: 150px;
-        left: unset;
+        left: 0;
         justify-content: space-between;
         border-radius: var(--border-radius);
         position: absolute;
@@ -608,7 +663,7 @@
     
     .MainDropDownRange3{
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        left: unset;
+        left: 0;
         right: unset;
         background-color: var(--Main-Color);
         padding: 20px;
@@ -616,12 +671,26 @@
         justify-content: space-between;
         border-radius: var(--border-radius);
         position: absolute;
-        width: 100%;
+        width: 90vw;
         display: flex;
         max-height: 230px;
         flex-wrap: wrap;
         margin-bottom: 0px;  
         z-index: 10; 
+    }
+
+    .MainButtons{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: unset;
+        flex-direction: column;
+    }
+    
+    .Advancedmenu{
+        flex-direction: column;
+        align-items: flex-start;
     }
     
 }
