@@ -295,6 +295,7 @@ export default function MainBusca() {
                 
                 <input type="text"
                 ref={inputRefCode}
+                aria-label="Pesquisa Por Referencia"
                 value={refCode}
                 onChange={handleInputRefCodeChange}
                 onFocus={handleInputRefFocus}
@@ -418,6 +419,7 @@ export default function MainBusca() {
               type="text"
               ref={inputRef}
               value={stringSearch}
+              aria-label="Buscar Imoveis Por Bairro ou Cidade."
               onChange={handleInputChange}
               onFocus={handleInputFocus}
               onBlur={handleInputBlur}
