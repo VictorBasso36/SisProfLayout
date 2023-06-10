@@ -79,7 +79,7 @@ export default function Resultado() {
 
   /*Tipo Imovel Drop Down*/
   const [imovelType, setImovelType] = useState(false); // Controla a visibilidade do dropdown
-  const [selectedImovelType, setSelectedImovelType] = useState(''); // Armazena o valor do checkbox selecionado
+  const [selectedImovelType, setSelectedImovelType] = useState('Apartamento'); // Armazena o valor do checkbox selecionado
 
   const handleCheckboxChange = (e) => {
     const value = e.target.value;
@@ -114,7 +114,6 @@ export default function Resultado() {
   };
 
   ////////////////////////
-
   /* Range Dormitorios Drop Down*/
   const [dormitoriosRange, setDormitoriosRange] = useState(false)//dropdown
   const [dormitoriosInitValue, setDormitoriosInitValue] = useState('');
@@ -137,7 +136,6 @@ export default function Resultado() {
     e.stopPropagation();
     setDormitoriosRange(!dormitoriosRange);
   };
-
   /////////////////////////////
   /*Range Suites Drop Down*/ 
   const [suitesRange, setSuitesRange] = useState(false); // Dropdown
@@ -209,8 +207,6 @@ export default function Resultado() {
   
   //Envio form para busca
   //envio da query a ser interpretada na tela de resultados buscando assim dentro da model da API da sisprof
-
-
   const Search = (e) => {
     console.log('buscou')
     if(e){
@@ -500,11 +496,6 @@ export default function Resultado() {
               {/* Pagination Loop pos API */}
                 <CardResultado/>
                 <CardResultado/>
-                <CardResultado/>
-                <CardResultado/>
-
-                <Banner  style={{ marginBottom: '10px' }} />
-
                 <CardResultado/>
                 <CardResultado/>
                 <CardResultado/>
