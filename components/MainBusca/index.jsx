@@ -69,7 +69,7 @@ export default function MainBusca() {
 
   /*Tipo Imovel Drop Down*/
   const [imovelType, setImovelType] = useState(false); // Controla a visibilidade do dropdown
-  const [selectedImovelType, setSelectedImovelType] = useState(''); // Armazena o valor do checkbox selecionado
+  const [selectedImovelType, setSelectedImovelType] = useState('Apartamento'); // Armazena o valor do checkbox selecionado
 
   const handleCheckboxChange = (e) => {
     const value = e.target.value;
