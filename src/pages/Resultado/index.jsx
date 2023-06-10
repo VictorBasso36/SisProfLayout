@@ -241,7 +241,6 @@ export default function Resultado() {
   useEffect(() => {
     const { stringSearch, contrato, imovelType, valueInit, valueEnd, dormitoriosInitValue, dormitoriosEndValue, SuitesInitValue, SuitesEndValue, rangeGaragensInitValue, rangeGaragensEndValue, options, refCode } = router.query;
 
-    console.log(rangeGaragensInitValue, rangeGaragensEndValue)
 
     // Defina os estados com base nos parâmetros da URL
     setStringSearch(stringSearch)
@@ -263,8 +262,8 @@ export default function Resultado() {
     }
   
     
-  }, [router.query.options]);
-
+  }, [router.query.stringSearch, router.query.contrato, router.query.imovelType, router.query.valueInit, router.query.valueEnd, router.query.dormitoriosInitValue, router.query.dormitoriosEndValue, router.query.SuitesInitValue, router.query.SuitesEndValue, router.query.rangeGaragensInitValue, router.query.rangeGaragensEndValue, router.query.options, router.query.refCode]);
+  console.log(stringSearch)
   
   //API Result
   const items = ["item1", "item2", "item3", "item4", "item5", "item6", "item7", "item8", "item9", "item10", "item1", "item2", "item3", "item4", "item5", "item6", "item7", "item8", "item9", "item10"];
