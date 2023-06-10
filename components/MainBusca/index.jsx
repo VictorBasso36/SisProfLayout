@@ -162,14 +162,14 @@ export default function MainBusca() {
     const rawValue = event.target.value.replace(/\D/g, '');
     const formattedValue = ` ${rawValue } Gar.`;
     setGaragensRangeInitValue(formattedValue);
-    console.log(rangeInitValue)
+
   };
 
   const handleGaragensRangeEndChange = (event) => {
     const rawValue = event.target.value.replace(/\D/g, '');
     const formattedValue = `${rawValue } Gar.`;
     setGaragensRangeEndValue(formattedValue);
-    console.log(rangeEndValue)
+
   };
 
   const handleGaragensDropdownClick = (e) => {
@@ -205,7 +205,7 @@ export default function MainBusca() {
     router.push({
       pathname: '/Resultado',
       query: { 
-        text: stringSearch, 
+        stringSearch: stringSearch, 
         contrato: contrato,
         imovelType: selectedImovelType,
         refCode: refCode,
@@ -217,7 +217,7 @@ export default function MainBusca() {
         SuitesInitValue: rangeInitValue,
         SuitesEndValue: rangeEndValue,
         rangeGaragensInitValue: rangeGaragensInitValue,
-        rangeGaragensEndValue: rangeGaragensInitValue,   
+        rangeGaragensEndValue: rangeGaragensEndValue,   
       },
 
     });

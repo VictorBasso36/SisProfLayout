@@ -36,7 +36,7 @@ export default function Resultado() {
 
   const handleInputChange = (event) => {
     setStringSearch(event.target.value);
-    console.log(stringSearch)
+
   };
 
   const handleInputFocus = () => {
@@ -59,7 +59,7 @@ export default function Resultado() {
 
   const handleInputRefCodeChange = (event) => {
     setRefCode(event.target.value);
-    console.log(refCode)
+
   };
 
   const handleInputRefFocus = () => {
@@ -98,14 +98,14 @@ export default function Resultado() {
     const rawValue = event.target.value.replace(/\D/g, '');
     const formattedValue = `R$ ${rawValue}`;
     setInitValue(formattedValue);
-    console.log(valueInit)
+
   };
 
   const handleValueRangeEndChange = (event) => {
     const rawValue = event.target.value.replace(/\D/g, '');
     const formattedValue = `R$ ${rawValue}`;
     setEndValue(formattedValue);
-    console.log(valueEnd)
+    
   };
 
   const handleValueDropdownClickSuites = (e) => {
@@ -123,14 +123,14 @@ export default function Resultado() {
     const rawValue = event.target.value.replace(/\D/g, '');
     const formattedValue = ` ${rawValue } Dormi.`;
     setDormitoriosInitValue(formattedValue);
-    console.log(rangeInitValue)
+
   };
 
   const handledormitoriosEndChange = (event) => {
     const rawValue = event.target.value.replace(/\D/g, '');
     const formattedValue = `${rawValue } Dormi.`;
     setDormitoriosEndValue(formattedValue);
-    console.log(rangeEndValue)
+   
   };
 
   const handleDormitoriosClickSuites = (e) => {
@@ -148,14 +148,14 @@ export default function Resultado() {
     const rawValue = event.target.value.replace(/\D/g, '');
     const formattedValue = ` ${rawValue } St.`;
     setRangeInitValue(formattedValue);
-    console.log(rangeInitValue)
+
   };
 
   const handleRangeEndChange = (event) => {
     const rawValue = event.target.value.replace(/\D/g, '');
     const formattedValue = `${rawValue } St.`;
     setRangeEndValue(formattedValue);
-    console.log(rangeEndValue)
+
   };
 
   const handleDropdownClickSuites = (e) => {
@@ -172,14 +172,14 @@ export default function Resultado() {
     const rawValue = event.target.value.replace(/\D/g, '');
     const formattedValue = ` ${rawValue } Gar.`;
     setGaragensRangeInitValue(formattedValue);
-    console.log(rangeInitValue)
+
   };
 
   const handleGaragensRangeEndChange = (event) => {
     const rawValue = event.target.value.replace(/\D/g, '');
     const formattedValue = `${rawValue } Gar.`;
     setGaragensRangeEndValue(formattedValue);
-    console.log(rangeEndValue)
+
   };
 
   const handleGaragensDropdownClick = (e) => {
@@ -212,14 +212,15 @@ export default function Resultado() {
 
 
   const Search = (e) => {
+    console.log('buscou')
     if(e){
-      e.preventDefault();
+    e.preventDefault();
     }
     // Adicione a query de estado à URL
     router.push({
       pathname: '/Resultado',
       query: { 
-        text: stringSearch, 
+        stringSearch: stringSearch, 
         contrato: contrato,
         imovelType: selectedImovelType,
         refCode: refCode,
@@ -231,22 +232,20 @@ export default function Resultado() {
         SuitesInitValue: rangeInitValue,
         SuitesEndValue: rangeEndValue,
         rangeGaragensInitValue: rangeGaragensInitValue,
-        rangeGaragensEndValue: rangeGaragensInitValue,   
+        rangeGaragensEndValue: rangeGaragensEndValue,   
       },
 
     });
   };
   
-
   useEffect(() => {
-    Search(); // Chama a função de busca quando qualquer uma das dependências mudar
-  }, [selectedImovelType, contrato, selectedOptions, valueInit, valueEnd, dormitoriosInitValue, dormitoriosEndValue, rangeInitValue, rangeEndValue, rangeGaragensInitValue, rangeGaragensEndValue]);
-  
+    const { stringSearch, contrato, imovelType, valueInit, valueEnd, dormitoriosInitValue, dormitoriosEndValue, SuitesInitValue, SuitesEndValue, rangeGaragensInitValue, rangeGaragensEndValue, options, refCode } = router.query;
 
-  useEffect(() => {
-    const { contrato, imovelType, valueInit, valueEnd, dormitoriosInitValue, dormitoriosEndValue, SuitesInitValue, SuitesEndValue, rangeGaragensInitValue, rangeGaragensEndValue, options } = router.query;
+    console.log(rangeGaragensInitValue, rangeGaragensEndValue)
 
     // Defina os estados com base nos parâmetros da URL
+    setStringSearch(stringSearch)
+    setRefCode(refCode)
     setSelectedImovelType(imovelType)
     SetContrato(contrato || "Venda");
     setImovelType(imovelType === "true");
@@ -258,12 +257,14 @@ export default function Resultado() {
     setRangeEndValue(SuitesEndValue || '');
     setGaragensRangeInitValue(rangeGaragensInitValue || '');
     setGaragensRangeEndValue(rangeGaragensEndValue || '');
-    setSelectedOptions(options);
 
-    
-
-  }, [router.query.options]);
+    if(options != undefined){
+      setSelectedOptions(options);
+    }
   
+    
+  }, [router.query.options]);
+
   
   //API Result
   const items = ["item1", "item2", "item3", "item4", "item5", "item6", "item7", "item8", "item9", "item10", "item1", "item2", "item3", "item4", "item5", "item6", "item7", "item8", "item9", "item10"];
