@@ -353,7 +353,7 @@
     height: 100%;
 }
 .MainSearch button:hover{
-    color: var(--Main-Color);
+    color: white;
     text-decoration: underline 2px var(--Main-Color);
 }
 

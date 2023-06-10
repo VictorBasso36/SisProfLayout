@@ -207,7 +207,7 @@ export default function MainBusca() {
       query: { 
         text: stringSearch, 
         contrato: contrato,
-        imovelType: imovelType,
+        imovelType: selectedImovelType,
         refCode: refCode,
         options: selectedOptions,
         valueInit: valueInit,
@@ -287,26 +287,26 @@ export default function MainBusca() {
               
             </div>
 
-            {/* coderef */}
-            <div className={styles.CodeRef}>
-              <div className={styles.IconRef} onClick={handleRefIconClick}>
-                {searchIcon}
+              {/* coderef */}
+              <div className={styles.CodeRef}>
+                <div className={styles.IconRef} onClick={handleRefIconClick}>
+                  {searchIcon}
+                </div>
+                
+                <input type="text"
+                ref={inputRefCode}
+                value={refCode}
+                onChange={handleInputRefCodeChange}
+                onFocus={handleInputRefFocus}
+                onBlur={handleInputRefBlur} />
+                <p style={{ opacity: isRefCodeFocused || !isInputRefCodeEmpty ? 0 : 1 }}>REFERÊNCIA</p>
+                
               </div>
-              
-              <input type="text"
-               ref={inputRefCode}
-               value={refCode}
-               onChange={handleInputRefCodeChange}
-               onFocus={handleInputRefFocus}
-               onBlur={handleInputRefBlur} />
-              <p style={{ opacity: isRefCodeFocused || !isInputRefCodeEmpty ? 0 : 1 }}>REFERÊNCIA</p>
-              
-            </div>
 
         </div>
         {/* Oculte */}
-        {moreFilters &&
-          <div className={styles.Advancedmenu}>
+        {moreFilters && 
+          <div className={styles.Advancedmenu} >
             <div className={styles.dropPaternLittle} onClick={handleValueDropdownClickSuites} style={valueRange ? { backgroundColor: 'var(--Main-Color)' } : {}}>
                 <p>VALOR</p>
                 <div className={`${styles.typeImovelArrow} ${valueRange ? styles.arrowRotated : ""}`}>

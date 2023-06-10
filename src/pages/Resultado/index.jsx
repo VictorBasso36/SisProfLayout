@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Poppins } from 'next/font/google'
 import styles from '@/styles/Resultado.module.css'
 import { useRouter } from 'next/router'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 //Components
 import NavBar from '../../../components/Navbar'
@@ -15,6 +15,7 @@ import CardResultado from '../../../components/CardResultado'
 
 
 export default function Resultado() {
+  
   //Pagination
   const [currentPage, setCurrentPage] = useState(1);
   const handlePageChange = (page) => {
@@ -205,18 +206,22 @@ export default function Resultado() {
     setOptionsItemsRadio(!optionsItemsRadio);
   };
 
+  
   //Envio form para busca
   //envio da query a ser interpretada na tela de resultados buscando assim dentro da model da API da sisprof
 
+
   const Search = (e) => {
-    e.preventDefault();
+    if(e){
+      e.preventDefault();
+    }
     // Adicione a query de estado à URL
     router.push({
       pathname: '/Resultado',
       query: { 
         text: stringSearch, 
         contrato: contrato,
-        imovelType: imovelType,
+        imovelType: selectedImovelType,
         refCode: refCode,
         options: selectedOptions,
         valueInit: valueInit,
@@ -232,7 +237,32 @@ export default function Resultado() {
     });
   };
   
+
+  useEffect(() => {
+    Search(); // Chama a função de busca quando qualquer uma das dependências mudar
+  }, [selectedImovelType, contrato, selectedOptions, valueInit, valueEnd, dormitoriosInitValue, dormitoriosEndValue, rangeInitValue, rangeEndValue, rangeGaragensInitValue, rangeGaragensEndValue]);
   
+
+  useEffect(() => {
+    const { contrato, imovelType, valueInit, valueEnd, dormitoriosInitValue, dormitoriosEndValue, SuitesInitValue, SuitesEndValue, rangeGaragensInitValue, rangeGaragensEndValue, options } = router.query;
+
+    // Defina os estados com base nos parâmetros da URL
+    setSelectedImovelType(imovelType)
+    SetContrato(contrato || "Venda");
+    setImovelType(imovelType === "true");
+    setInitValue(valueInit || '');
+    setEndValue(valueEnd || '');
+    setDormitoriosInitValue(dormitoriosInitValue || '');
+    setDormitoriosEndValue(dormitoriosEndValue || '');
+    setRangeInitValue(SuitesInitValue || '');
+    setRangeEndValue(SuitesEndValue || '');
+    setGaragensRangeInitValue(rangeGaragensInitValue || '');
+    setGaragensRangeEndValue(rangeGaragensEndValue || '');
+    setSelectedOptions(options);
+
+    
+
+  }, [router.query.options]);
   
   
   //API Result
@@ -281,7 +311,10 @@ export default function Resultado() {
                       <p style={{ opacity: isInputFocused || !isInputEmpty ? 0 : 1 }}>
                         Procure por cidade ou bairro.                  
                       </p>
-                    </div>   
+                    </div>
+                    <button type='submit'>
+                        <p>BUSCAR</p> 
+                    </button>   
                   </div>
                   {/* locação e venda */}
                   <div className={styles.ContractButtons}>
@@ -294,8 +327,8 @@ export default function Resultado() {
                     </div>
                   </div>
                    {/*TIPO DE IMOVEL*/}
-                  <div className={styles.typeImovel} onClick={() => setImovelType(!imovelType)} style={imovelType ? { backgroundColor: 'var(--Second-Color)' } : {}}>
-                    <p style={imovelType ? { color: 'var(--Main-Color)' } : {}}>TIPO DE IMÓVEL</p>
+                  <div className={styles.typeImovel} onClick={() => setImovelType(!imovelType)} style={imovelType ? { backgroundColor: 'var(--Main-Color)' } : {}}>
+                    <p>TIPO DE IMÓVEL</p>
                     <div className={`${styles.typeImovelArrow} ${imovelType ? styles.arrowRotated : ""}`}>
                       {arrowIcon}  
                     </div>  
@@ -328,10 +361,10 @@ export default function Resultado() {
                     }    
                   </div>
                   {/* more filters */}
-                  <div className={styles.MoreFilters} onClick={() => setMoreFilters(!moreFilters)} style={moreFilters ? { backgroundColor: 'var(--Second-Color)' } : {}}>
+                  <div className={styles.MoreFilters} onClick={() => setMoreFilters(!moreFilters)} style={moreFilters ? { backgroundColor: 'var(--Main-Color)' } : {}}>
                     <div className={styles.MoreFiltersIcons}>
                       {funilIcon}
-                      <p style={moreFilters ? { color: 'var(--Main-Color)' } : {}}>MAIS FILTROS</p>
+                      <p >MAIS FILTROS</p>
                     </div>
                     <div className={`${styles.typeImovelArrow} ${moreFilters ? styles.arrowRotated : ""}`}>
                       {arrowIcon}  

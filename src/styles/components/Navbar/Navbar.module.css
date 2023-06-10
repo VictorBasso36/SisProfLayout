@@ -8,7 +8,7 @@
      align-items: center;
      justify-content: center;
      height: 100%;
-     z-index: 1;
+     z-index: 999;
      padding-top: 200px;
 }
 .ModalNavbarContainer{
@@ -49,6 +49,7 @@
     left: 0;
     right: 0;
     display: flex;
+    z-index: 9999;
     align-items: center;
     justify-content: center;
     margin-top: 30px;
@@ -121,6 +122,7 @@
 }
 .HambMenu{
     display: none;
+    z-index: 9999;
 }
 
 
@@ -129,6 +131,7 @@
 
    .MainMenu{
         display: none;
+        z-index: 999;
    } 
 
    .HambMenu{

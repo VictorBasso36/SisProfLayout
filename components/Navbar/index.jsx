@@ -33,7 +33,7 @@ export default function NavBar() {
                     <li><Link href="/Contato" style={{textDecoration: router.pathname === '/Contato' ? 'underline 1px var(--Main-Color)' : 'unset'}}><p>Contato</p></Link></li>
                     <li><Link href="/Anunciar" style={{textDecoration: router.pathname === '/Anunciar' ? 'underline 1px var(--Main-Color)' : 'unset'}}><p>Anunciar</p></Link></li>
                     <li>
-                    <Link title="Área do cliente sisprof" href="https://www.google.com.br/" target="_blank">
+                    <Link title="Área do cliente sisprof" href="https://www.sistemasprofissionais.com.br/area-do-cliente/" target="_blank">
                         <div className={styles.ClienteArea}>
                             <p>Área do cliente</p>  
                         </div>
@@ -87,7 +87,7 @@ export default function NavBar() {
                         </Link>
                     </li>
                     <li>
-                        <Link title="Área do cliente sisprof" href="google.com" target="_blank">
+                        <Link title="Área do cliente sisprof" href="https://www.sistemasprofissionais.com.br/area-do-cliente/" target="_blank">
                             <div className={styles.ClienteArea}>
                                <p>Área do cliente</p>  
                             </div>
