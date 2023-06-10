@@ -7,7 +7,7 @@ import styles from '@/styles/components/MainBusca/MainBusca.module.css'
 
 //ItemsNext
 import Link from 'next/link'
-import { useEffect, useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 
 import axios from 'axios';
 import 'swiper/swiper-bundle.css';
